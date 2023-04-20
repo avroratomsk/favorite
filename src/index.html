@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+
+			<!-- Начало блока УТП -->
+			@@include('html/includes/_upt.html',{})
+			<!-- Конец блока УТП -->
+
+			<!-- Начало блока 5 шагов -->
+			@@include('html/includes/steps.html',{})
+			<!-- Конец блока 5 шагов -->
+
+			<!-- Начало блока бесплатно вызвать замерщика -->
+			@@include('html/includes/free_call.html',{})
+			<!-- Конец блока бесплатно вызвать замерщика -->
+
+			<!-- Начало блока качества -->
+			@@include('html/includes/quality.html',{})
+			<!-- Конец блока качества -->
+
+		</main>
+
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
