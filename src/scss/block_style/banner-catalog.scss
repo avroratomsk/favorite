@@ -1,0 +1,44 @@
+.banner-catalog {
+    position: relative;
+    min-height: 443px;
+
+    // .banner-catalog__image
+
+    &__image {
+        z-index: -1;
+    }
+
+    // .banner-catalog__container
+
+    &__container {}
+
+    // .banner-catalog__body
+
+    &__body {
+        padding-top: 110px;
+    }
+
+    // .banner-catalog__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 56px;
+        // line-height: 120%;
+        color: #FFFFFF;
+        display: inline-flex;
+        flex-direction: column;
+
+        .first {
+            background-color: $accent;
+            padding: 10px 25px;
+        }
+
+        .second {
+            padding: 0px 25px;
+        }
+
+        @media screen and (min-width: 769px) {
+            margin-top: 110px;
+        }
+    }
+}
