@@ -1,0 +1,50 @@
+.project {
+    padding: 117px 0px 68px;
+
+    // .project__container
+
+    &__container {}
+
+    // .project__body
+
+    &__body {}
+
+    // .project__slider
+
+    &__slider {}
+
+    // .project__wrapper
+
+    &__wrapper {}
+
+    // .project__slide
+
+    &__slide {
+        overflow: hidden;
+        border-radius: 5px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // .project__link
+    &__link {
+        width: 210px;
+        height: 48px;
+        background-color: $accent;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.01em;
+        color: $white;
+        margin-top: 40px;
+    }
+}
+
+.swiper {}
+
+.swiper-wrapper {}

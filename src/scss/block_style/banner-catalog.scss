@@ -23,7 +23,6 @@
     &__title {
         font-weight: 700;
         font-size: 56px;
-        // line-height: 120%;
         color: #FFFFFF;
         display: inline-flex;
         flex-direction: column;
@@ -35,6 +34,18 @@
 
         .second {
             padding: 0px 25px;
+        }
+
+        @media screen and (max-width: 670px) {
+            font-size: 42px;
+        }
+
+        @media screen and (max-width: 525px) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 425px) {
+            font-size: 27px;
         }
 
         @media screen and (min-width: 769px) {

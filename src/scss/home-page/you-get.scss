@@ -1,0 +1,57 @@
+.you-get {
+    position: relative;
+    padding: 83px 0px 120px;
+
+    // .you-get__bg
+
+    &__bg {
+        z-index: -1;
+    }
+
+    // .you-get__container
+
+    &__container {}
+
+    // .you-get__title
+
+    &__title {
+        color: $accent;
+        margin-bottom: 46px;
+    }
+
+    // .you-get__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(251px, 1fr));
+        gap: 70px;
+
+        @media screen and (max-width: 1024px) {
+            gap: 30px;
+        }
+    }
+
+    // .you-get__card
+
+    &__card {}
+
+    // .you-get__title--card
+    &__title--card {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 769px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    // .you-get__text
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 132%;
+    }
+}

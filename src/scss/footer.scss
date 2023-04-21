@@ -1,3 +1,113 @@
-//====================================================================================================
+.footer {
+    padding: 0px 0px 52px;
 
-//====================================================================================================
+
+    // .footer__container
+
+    &__container {}
+
+    // .footer__body
+
+    &__body {
+        padding-top: 35px;
+        border-top: 1px solid $accent;
+
+        @media screen and (min-width: 1025px) {
+            display: flex;
+        }
+    }
+
+    // .footer__text
+
+    &__text {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+
+        span {
+            color: $accent;
+        }
+
+        @media screen and (min-width: 1025px) {
+            max-width: 361px;
+            margin-right: 25px;
+        }
+
+        @media screen and (max-width: 425px) {
+            font-size: 22px;
+        }
+    }
+
+    // .footer__menu
+
+    &__menu {}
+}
+
+.menu-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+
+    @media screen and (max-width: 1025px) {
+        margin-top: 34px;
+    }
+
+
+    // .menu-footer__col
+
+    &__col {}
+
+    // .menu-footer__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 132%;
+        color: $accent;
+        margin-bottom: 26px;
+    }
+
+    // .menu-footer__list
+
+    &__list {}
+
+    // .menu-footer__item
+
+    &__item {
+        margin-bottom: 3px;
+    }
+
+    // .menu-footer__link
+
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 132%;
+        transition: color $speed_animation ease 0s;
+        padding: 2px 0px;
+        display: block;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    // .menu-footer__link--bold
+    &__link--bold {
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+
+    // .menu-footer__addres
+
+    &__addres {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .menu-top__social {}
+}
