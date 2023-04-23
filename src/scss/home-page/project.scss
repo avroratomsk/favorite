@@ -1,6 +1,10 @@
 .project {
     padding: 117px 0px 68px;
 
+    @media screen and (max-width: 700px) {
+        padding: 77px 0px;
+    }
+
     // .project__container
 
     &__container {}
@@ -11,7 +15,9 @@
 
     // .project__slider
 
-    &__slider {}
+    &__slider {
+        position: relative;
+    }
 
     // .project__wrapper
 
@@ -42,6 +48,11 @@
         letter-spacing: 0.01em;
         color: $white;
         margin-top: 40px;
+
+        @media screen and (max-width: 700px) {
+            width: 100%;
+            margin-top: 24px;
+        }
     }
 }
 

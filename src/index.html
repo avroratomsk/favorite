@@ -79,7 +79,7 @@
 									отношение на всех этапах работы с нашими клиентами.
 								</p>
 							</div>
-							<div class="slider-arrow">
+							<div class="slider-arrow slider-arrow--pc">
 								<div class="slider-prev project-prev">
 									<img src="@img/icons/chevron-left.svg" alt="Icon">
 								</div>
@@ -106,33 +106,116 @@
 									<img src="@img/project/project-3.jpg" alt="Проект 3">
 								</div>
 							</div>
+							<div class="slider-arrow slider-arrow--mb">
+								<div class="slider-prev project-prev">
+									<img src="@img/icons/chevron-left.svg" alt="Icon">
+								</div>
+								<div class="slider-next project-next">
+									<img src="@img/icons/chevron-right.svg" alt="Icon">
+								</div>
+							</div>
 						</div>
 						<a href="#" class="project__link">Посмотреть все объекты</a>
 					</div>
 				</div>
 			</div>
 
-			<!-- Начало блока качества в колонку -->
-			@@include('html/includes/quality-column.html',{})
-			<!-- Конец блока качества в колонку -->
+			<div class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__body">
+						<div class="slider-top">
+							<div class="slider-text">
+								<h2 class="_title slider-title">Отзывы клиентов</h2>
+							</div>
+							<div class="slider-arrow slider-arrow--pc">
+								<div class="slider-prev reviews-prev">
+									<img src="@img/icons/chevron-left.svg" alt="Icon">
+								</div>
+								<div class="slider-next reviews-next">
+									<img src="@img/icons/chevron-right.svg" alt="Icon">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__slider swiper">
+							<div class="reviews__wrapper swiper-wrapper">
+								<div class="reviews__slide swiper-slide">
+									<h4 class="reviews__slide--name">Русина Алла Григорьевна</h4>
+									<div class="reviews__slide--text">
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
 
-			<!-- Начало блока карточки каталога -->
-			@@include('html/includes/catalog-item.html',{
-			"title": "Раздвижные системы",
-			"titletwo": "Распашные системы",
-			"titlethree": "Витражи"
-			})
-			<!-- Конец блока карточки каталога -->
+									</div>
+									<button type="button" class="reviews__slide--button">
+										Читать
+										<img src="@img/icons/chevron-down.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<h4 class="reviews__slide--name">Русина Алла Григорьевна</h4>
+									<div class="reviews__slide--text">
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+									</div>
+									<button type="button" class="reviews__slide--button">
+										Читать
+										<img src="@img/icons/chevron-down.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<h4 class="reviews__slide--name">Русина Алла Григорьевна</h4>
+									<div class="reviews__slide--text">
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+									</div>
+									<button type="button" class="reviews__slide--button">
+										Читать
+										<img src="@img/icons/chevron-down.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<h4 class="reviews__slide--name">Русина Алла Григорьевна</h4>
+									<div class="reviews__slide--text">
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+										Я очень хочу поблагодарить руководителей компании Фаворит. За умелую подборку
+										кадров
+									</div>
+									<button type="button" class="reviews__slide--button">
+										Читать
+										<img src="@img/icons/chevron-down.svg" alt="Icon">
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="slider-arrow reviews-arrow">
+							<div class="slider-prev reviews-prev">
+								<img src="@img/icons/chevron-left.svg" alt="Icon">
+							</div>
+							<div class="slider-next reviews-next">
+								<img src="@img/icons/chevron-right.svg" alt="Icon">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<!-- Начало блока описание карточки-->
-			@@include('html/includes/catalog-descr.html',{
-			"title": "Раздвижные системы"
-			})
-			<!-- Конец блока описание карточки -->
-
-			<!-- Начало блока банер каталога-->
-			@@include('html/includes/banner-catalog.html',{})
-			<!-- Конец блока банер каталога -->
+			<!-- Начало блока салоны продаж-->
+			@@include('html/includes/salons.html',{})
+			<!-- Конец блока салоны продаж -->
 
 		</main>
 

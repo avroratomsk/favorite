@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -103,6 +103,208 @@ function initSliders() {
 
 			}
 			*/
+		});
+	}
+
+	if (document.querySelector('.utp__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.utp__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			autoHeight: true,
+			speed: 800,
+			// allowTouchMove: false,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			/*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.project-prev',
+				nextEl: '.project-next',
+			},
+
+			// Брейкпоинты
+			// breakpoints: {
+			// 	320: {
+			// 		slidesPerView: 1,
+			// 		spaceBetween: 20,
+			// 		autoHeight: true,
+			// 	},
+			// 	700: {
+			// 		slidesPerView: 2,
+			// 		spaceBetween: 20,
+			// 	},
+			// 	992: {
+			// 		slidesPerView: 3,
+			// 		spaceBetween: 20,
+			// 	},
+			// 	1268: {
+			// 		slidesPerView: 3,
+			// 		spaceBetween: 30,
+			// 	},
+			// },
+			/* События
+			on: {
+
+			}
+			*/
+		});
+	}
+
+	if (document.querySelector('.reviews__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.reviews__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			autoHeight: true,
+			speed: 800,
+			allowTouchMove: false,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			/*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.reviews-prev',
+				nextEl: '.reviews-next',
+			},
+
+			// Брейкпоинты
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 30,
+					autoHeight: true,
+				},
+				701: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+				},
+				1025: {
+					slidesPerView: 2.5,
+					spaceBetween: 23,
+				},
+			},
+			/* События
+			on: {
+
+			}
+			*/
+		});
+	}
+
+	if (document.querySelector('.stock__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.stock__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Pagination, Autoplay],
+			observer: true,
+			observeParents: true,
+			autoHeight: true,
+			speed: 800,
+			allowTouchMove: false,
+			slidesPerView: 1,
+			spaceBetween: 0,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			// Эффекты
+			// effect: 'fade',
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+
+			// Пагинация
+			pagination: {
+				el: '.slider__pagination',
+				clickable: true,
+			},
+
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.banner-prev',
+				nextEl: '.banner-next',
+			},
 		});
 	}
 }

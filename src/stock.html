@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Акции"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="stock">
+
+            <!-- Начало блока банер каталога-->
+            @@include('html/includes/stock-slider.html',{})
+            <!-- Конец блока банер каталога -->
+
+            <div class="blog">
+                <div class="blog__container">
+                    <div class="blog__body">
+                        <div class="blog__card">
+                            <div class="blog__image">
+                                <img src="@img/blog-1.jpg" alt="Блог">
+                            </div>
+                            <h3 class="blog__title">
+                                Пластиковые окна с установкой<br> под ключ для молодых семей<br> со скидкой 20%
+                            </h3>
+                            <p class="blog__subtitle">
+                                Акция действует до 20 декабря 2023 года
+                            </p>
+                            <button type="button" class="_btn blog__button">Участвовать в акции</button>
+                        </div>
+                        <div class="blog__card">
+                            <div class="blog__image">
+                                <img src="@img/blog-2.jpg" alt="Блог">
+                            </div>
+                            <h3 class="blog__title">
+                                Замена пластикового<br> блока окна бесплатно
+                            </h3>
+                            <p class="blog__subtitle">
+                                Акция действует до 20 декабря 2023 года
+                            </p>
+                            <button type="button" class="_btn blog__button">Участвовать в акции</button>
+                        </div>
+                        <div class="blog__card">
+                            <div class="blog__image">
+                                <img src="@img/blog-3.jpg" alt="Блог">
+                            </div>
+                            <h3 class="blog__title">
+                                Вызов специалиста и проведение<br> замеров вашего окна быстро<br> и бесплатно!
+                            </h3>
+                            <p class="blog__subtitle">
+                                Акция действует до 20 декабря 2023 года
+                            </p>
+                            <button type="button" class="_btn blog__button">Участвовать в акции</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Начало блока 5 шагов -->
+            @@include('html/includes/steps.html',{})
+            <!-- Конец блока 5 шагов -->
+
+            <!-- Начало блока качества в колонку -->
+            @@include('html/includes/quality-column.html',{})
+            <!-- Конец блока качества в колонку -->
+
+            <!-- Начало блока бесплатно вызвать замерщика -->
+            @@include('html/includes/free_call.html',{})
+            <!-- Конец блока бесплатно вызвать замерщика -->
+
+        </main>
+
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

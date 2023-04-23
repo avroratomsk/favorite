@@ -1,0 +1,130 @@
+.salons {
+    padding: 105px 0px 134px;
+
+    @media screen and (max-width: 940px) {
+        padding: 80px 0px 100px;
+    }
+
+    // .salons__container
+
+    &__container {}
+
+    // .salons__title
+
+    &__title {
+        color: $accent;
+        margin-bottom: 38px;
+
+        @media screen and (max-width: 426px) {
+            font-size: 22px;
+        }
+    }
+
+    // .salons__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 130px;
+        justify-items: space-between;
+
+        @media screen and (max-width: 1280px) {
+            gap: 50px;
+        }
+
+        @media screen and (max-width: 1025px) {
+            gap: 30px;
+        }
+    }
+
+    // .salons__col
+
+    &__col {}
+
+    // .salons__col--one
+
+    &__col--one {
+        .salons__info {
+            &:not(:last-child) {
+                margin-bottom: 56px;
+
+                @media screen and (max-width: 640px) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    // .salons__info
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    // .salons__col--title
+
+    &__col--title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 132%;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 426px) {
+            font-size: 22px;
+        }
+    }
+
+    // .salons__col--address
+
+    &__col--address {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    // .salons__col--link
+
+    &__col--link {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    // .salons__col--two
+
+    &__col--two {
+        .salons__info {
+            &:first-child {
+                margin-top: 42px;
+
+                @media screen and (max-width: 640px) {
+                    margin-top: 0px;
+                }
+            }
+
+            &:nth-child(2) {
+                margin: 56px 0px 14px;
+
+                @media screen and (max-width: 640px) {
+                    margin: 30px 0px 30px;
+                }
+            }
+        }
+    }
+
+    // .salons__col--three
+
+    &__col--three {
+        .salons__info {
+            &:last-child {
+                margin: 107px 0px 0px;
+
+                @media screen and (max-width: 960px) {
+                    margin: 30px 0px 0px;
+                }
+            }
+        }
+    }
+}

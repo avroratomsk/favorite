@@ -164,10 +164,14 @@ body {
 @import "block_style/catalog-item";
 @import "block_style/catalog-descr";
 @import "block_style/banner-catalog";
+@import "block_style/salons";
 
 // Подключение стилей блоков страниц
 @import "home-page/you-get";
 @import "home-page/project";
+@import "home-page/reviews";
+@import "stock-page/banner";
+@import "stock-page/blog";
 
 // Подключение стилей отдельных страниц
 @import "home";
