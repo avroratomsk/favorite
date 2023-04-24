@@ -153,6 +153,7 @@ body {
 
 // Подключение стилей общих элементов проекта
 @import "common";
+@import "animation";
 
 // Подключение стилей одинаковых блоков
 @import "header";
@@ -172,6 +173,7 @@ body {
 @import "home-page/reviews";
 @import "stock-page/banner";
 @import "stock-page/blog";
+@import "single-page/banner";
 
 // Подключение стилей отдельных страниц
 @import "home";

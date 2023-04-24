@@ -416,8 +416,14 @@ export function menuInit() {
 	if (document.querySelector(".icon-menu")) {
 		document.addEventListener("click", function (e) {
 			if (bodyLockStatus && e.target.closest('.icon-menu')) {
-				bodyLockToggle();
-				document.documentElement.classList.toggle("menu-open");
+				// bodyLockToggle();
+				// document.documentElement.classList.toggle("menu-open");
+				let menu = document.querySelector('.menu');
+				if (!menu.classList.contains('menu-open')) {
+					menuOpen();
+				} else {
+					menuClose();
+				}
 			}
 		});
 	};
@@ -425,10 +431,12 @@ export function menuInit() {
 export function menuOpen() {
 	bodyLock();
 	document.documentElement.classList.add("menu-open");
+	document.querySelector('.menu').classList.add('menu-open');
 }
 export function menuClose() {
 	bodyUnlock();
 	document.documentElement.classList.remove("menu-open");
+	document.querySelector('.menu').classList.remove('menu-open');
 }
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*

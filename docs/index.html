@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230424014819">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230424180020">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
 						<img src="img/icons/logo.svg" alt="Логотип">
 					</a>
 					<div class="top-header__wrapper">
-						<div class="top-header__info">
+						<div class="top-header__info menu-pc">
 							<p class="top-header__info--text">
 								Окна и двери от завода производителя!
 							</p>
@@ -35,6 +35,52 @@
 							</div>
 						</div>
 						<div class="menu-top__menu menu">
+							<nav class="bottom-header__body menu-mb">
+								<ul class="bottom-header__list">
+									<li class="bottom-header__item">
+										<a href="" class="bottom-header__link">Ремонт окон</a>
+									</li>
+									<li class="bottom-header__item">
+										<a href="/catalog.html" class="bottom-header__link">Окна</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Окна из алюминиевых профилей
+												</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link">
+													Окна из ПВХ профилей
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="bottom-header__item">
+										<a href="" class="bottom-header__link">Двери</a>
+									</li>
+									<li class="bottom-header__item">
+										<a href="" class="bottom-header__link">Роллеты</a>
+									</li>
+									<li class="bottom-header__item">
+										<a href="" class="bottom-header__link">Ворота</a>
+									</li>
+									<li class="bottom-header__item">
+										<a href="/stock.html" class="bottom-header__link">
+											<img src="img/icons/percent.svg" alt="Иконка процентов">
+											Акции
+										</a>
+									</li>
+									<li class="bottom-header__item">
+										<a href="" class="bottom-header__link">
+											Отзывы
+											<span class="reviews-count">31</span>
+										</a>
+									</li>
+									<li class="bottom-header__item">
+										<a href="" class="bottom-header__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu__item">
@@ -59,7 +105,14 @@
 									</li>
 								</ul>
 							</nav>
-							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<div class="top-header__info--contact menu-mb">
+								<p class="top-header__info--city">
+									г. Магнитогорск
+								</p>
+								<a href="tel:+7 (3519) 47-22-74" class="top-header__info--phone">
+									+7 (3519) 47-22-74
+								</a>
+							</div>
 							<div class="menu-top__social">
 								<a href="">
 									<picture><source srcset="img/icons/whatsapp.webp" type="image/webp"><img src="img/icons/whatsapp.png" alt="WhatsApp icon"></picture>
@@ -73,24 +126,33 @@
 							</div>
 						</div>
 					</div>
+					<div class="bottom-header__calc menu-mb">
+						<button type="button" class="">Калькулятор</button>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 				<div class="header__bottom bottom-header">
-					<button type="button" class="bottom-header__calc">Калькулятор</button>
-					<nav class="bottom-header__body">
+					<div class="bottom-header__calc menu-pc">
+						<button type="button" class="">Калькулятор</button>
+					</div>
+					<p class="top-header__info--text menu-mb">
+						Окна и двери от завода производителя!
+					</p>
+					<nav class="bottom-header__body menu-pc">
 						<ul class="bottom-header__list">
 							<li class="bottom-header__item">
 								<a href="" class="bottom-header__link">Ремонт окон</a>
 							</li>
 							<li class="bottom-header__item">
-								<a href="" class="bottom-header__link">Окна</a>
+								<a href="#" class="bottom-header__link">Окна</a>
 								<ul class="submenu">
 									<li class="submenu__item">
-										<a href="#" class="submenu__link">
+										<a href="/catalog.html" class="submenu__link">
 											Окна из алюминиевых профилей
 										</a>
 									</li>
 									<li class="submenu__item">
-										<a href="#" class="submenu__link">
+										<a href="/catalog-1.html" class="submenu__link">
 											Окна из ПВХ профилей
 										</a>
 									</li>
@@ -106,7 +168,7 @@
 								<a href="" class="bottom-header__link">Ворота</a>
 							</li>
 							<li class="bottom-header__item">
-								<a href="" class="bottom-header__link">
+								<a href="/stock.html" class="bottom-header__link">
 									<img src="img/icons/percent.svg" alt="Иконка процентов">
 									Акции
 								</a>
@@ -120,6 +182,7 @@
 							<li class="bottom-header__item">
 								<a href="" class="bottom-header__link">Контакты</a>
 							</li>
+						</ul>
 					</nav>
 				</div>
 			</div>
@@ -134,55 +197,48 @@
 						<div class="utp__wrapper swiper-wrapper">
 							<div class="utp__slide swiper-slide">
 								<picture><source srcset="img/home-utp.webp" type="image/webp"><img src="img/home-utp.jpg" alt="Картинка" class="utp__slide--image _bg-cover"></picture>
-								<div class="utp__container">
-									<div class="utp__body">
-										<h3 class="utp__title">
-											Пластиковые окна, защитные роллеты и автоматические гаражные ворота
-										</h3>
-									</div>
-								</div>
+								<h3 class="utp__title">
+									<span>
+										Пластиковые окна, защитные роллеты и автоматические гаражные ворота
+									</span>
+								</h3>
 							</div>
 							<div class="utp__slide swiper-slide">
 								<picture><source srcset="img/home-utp.webp" type="image/webp"><img src="img/home-utp.jpg" alt="Картинка" class="utp__slide--image _bg-cover"></picture>
-								<div class="utp__container">
-									<div class="utp__body">
-										<h3 class="utp__title">
-											Пластиковые окна, защитные роллеты и автоматические гаражные ворота
-										</h3>
-									</div>
-								</div>
+								<h3 class="utp__title">
+									<span>
+										Пластиковые окна, защитные роллеты и автоматические гаражные ворота
+									</span>
+								</h3>
 							</div>
 							<div class="utp__slide swiper-slide">
 								<picture><source srcset="img/home-utp.webp" type="image/webp"><img src="img/home-utp.jpg" alt="Картинка" class="utp__slide--image _bg-cover"></picture>
-								<div class="utp__container">
-									<div class="utp__body">
-										<h3 class="utp__title">
-											Пластиковые окна, защитные роллеты и автоматические гаражные ворота
-										</h3>
-									</div>
-								</div>
+								<h3 class="utp__title">
+									<span>
+										Пластиковые окна, защитные роллеты и автоматические гаражные ворота
+									</span>
+								</h3>
 							</div>
 						</div>
+						<div class="swiper-pagination"></div>
 					</div>
 				</div>
 				<div class="utp__form from-utp">
-					<div class="from-utp__container">
-						<div class="from-utp__content">
-							<h2 class="from-utp__title">
-								Вам необходима консультация?
-							</h2>
-							<p class="from-utp__subtitle">
-								Наши специалисты оперативно выполнят замер <span>бесплатно</span> и вышлют <span>расчет</span>
-							</p>
-							<form action="" class="from-utp__form">
-								<input type="tel" name="phone" id="phone" class="from-utp__input" placeholder="Ваш номер телефона">
-								<input type="text" name="name" id="name" class="from-utp__input" placeholder="Ваше имя">
-								<div class="from-utp__buttons">
-									<button class="from-utp__button from-utp__button--red">Заказать звонок</button>
-									<button class="from-utp__button from-utp__button--transparent">Узнать стоимость</button>
-								</div>
-							</form>
-						</div>
+					<div class="from-utp__content">
+						<h2 class="from-utp__title">
+							Вам необходима консультация?
+						</h2>
+						<p class="from-utp__subtitle">
+							Наши специалисты оперативно выполнят замер <span>бесплатно</span> и вышлют <span>расчет</span>
+						</p>
+						<form action="" class="from-utp__form">
+							<input type="tel" name="phone" id="phone" class="from-utp__input" placeholder="Ваш номер телефона">
+							<input type="text" name="name" id="name" class="from-utp__input" placeholder="Ваше имя">
+							<div class="from-utp__buttons">
+								<button class="from-utp__button from-utp__button--red">Заказать звонок</button>
+								<button class="from-utp__button from-utp__button--transparent">Узнать стоимость</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -735,7 +791,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230424014819"></script>
+	<script src="js/app.min.js?_v=20230424180020"></script>
 </body>
 
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="single">
+
+            <div class="single-banner">
+                <div class="single-banner__container">
+                    <div class="single-banner__body">
+                        <div class="single-banner__col">
+                            <h2 class="single-banner__title _title">
+                                <span>Пластиковые окна</span><br>
+                                с надежными механизмами из качественных материалов
+                            </h2>
+                            <p class="single-banner__subtitle">
+                                Добросовестное отношение на всех этапах<br> работы с нашими клиентами.
+                            </p>
+                        </div>
+                        <div class="single-banner__col">
+                            <div class="single-banner__image">
+                                <img src="@img/window.png" alt="Окно">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Начало блока описание карточки-->
+            @@include('html/includes/catalog-descr.html',{
+            "title": "Выбор окна"
+            })
+            <!-- Конец блока описание карточки -->
+
+            <!-- Начало блока УТП -->
+            @@include('html/includes/_upt.html',{})
+            <!-- Конец блока УТП -->
+
+            <!-- Начало блока банер каталога-->
+            @@include('html/includes/stock-slider.html',{})
+            <!-- Конец блока банер каталога -->
+
+            <!-- Начало блока качества в колонку -->
+            @@include('html/includes/quality-column.html',{})
+            <!-- Конец блока качества в колонку -->
+
+            <!-- Начало блока 5 шагов -->
+            @@include('html/includes/steps.html',{})
+            <!-- Конец блока 5 шагов -->
+
+            <!-- Начало блока бесплатно вызвать замерщика -->
+            @@include('html/includes/free_call.html',{})
+            <!-- Конец блока бесплатно вызвать замерщика -->
+
+        </main>
+
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -29,6 +29,30 @@
     }
 }
 
+.single {
+    .catalog-descr {
+        margin-top: -180px;
+    }
+
+    .catalog-descr__title {
+        color: $accent;
+    }
+
+    .stock-bottom__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stock__slider {
+        margin-top: 100px;
+    }
+
+    .free-call {
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+}
+
 
 ._title {
     font-weight: 700;
@@ -82,6 +106,8 @@
     }
 }
 
+// Видимость на том или ином разрешение экрана
+
 // Видны на пк
 .pc {
     @media screen and (max-width: 768px) {
@@ -92,6 +118,19 @@
 // Видны на мобильных
 .mb {
     @media screen and (min-width: 769px) {
+        display: none !important;
+    }
+}
+
+// Видимость на том или ином разрешение экрана адреса в меню
+.menu-mb {
+    @media screen and (min-width: 921px) {
+        display: none !important;
+    }
+}
+
+.menu-pc {
+    @media screen and (max-width: 921px) {
         display: none !important;
     }
 }
@@ -179,6 +218,7 @@
     width: 8px;
     height: 8px;
     background: #FFFFFF;
+    cursor: pointer;
 
     &:not(:last-child) {
         margin-right: 15px;
