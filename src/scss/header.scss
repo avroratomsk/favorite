@@ -138,6 +138,12 @@
     a {
       width: 20px;
       height: 20px;
+      transition: $speed_animation;
+
+
+      &:hover {
+        transform: translateY(-1px);
+      }
 
       &:not(:last-child) {
         margin-right: 12px;
@@ -254,7 +260,6 @@
       height: 48px;
       background: $accent;
       border-radius: 2px;
-
       font-weight: 700;
       font-size: 14px;
       display: flex;
@@ -262,6 +267,36 @@
       justify-content: center;
       letter-spacing: 0.01em;
       color: $white;
+      overflow: hidden;
+      position: relative;
+      transition: $speed_animation;
+
+      span {
+        transition: $speed_animation;
+      }
+
+
+
+      &:hover {
+        img {
+          right: 6%;
+        }
+
+        span {
+          transform: translateX(-5px);
+        }
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        right: -54%;
+        margin-top: 2px;
+        transform: translateY(-50%);
+        transition: $speed_animation;
+      }
 
       @media screen and (max-width: 921px) {
         height: 38px;
