@@ -142,6 +142,10 @@
 .slider-top {
     display: flex;
     margin-bottom: 20px;
+
+    .swiper-button-disabled {
+        opacity: .5;
+    }
 }
 
 .slider-text {
@@ -232,6 +236,8 @@
 .swiper-pagination-bullet-active {
     background: $accent;
 }
+
+
 
 
 input:-webkit-autofill,

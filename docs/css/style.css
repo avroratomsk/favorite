@@ -586,6 +586,10 @@ body::after {
   margin-bottom: 20px;
 }
 
+.slider-top .swiper-button-disabled {
+  opacity: 0.5;
+}
+
 .slider-text {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
