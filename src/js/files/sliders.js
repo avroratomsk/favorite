@@ -111,14 +111,14 @@ function initSliders() {
 		new Swiper('.utp__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Pagination],
+			modules: [Navigation, Pagination, Autoplay],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 20,
 			autoHeight: true,
 			speed: 800,
-			// allowTouchMove: false,
+			allowTouchMove: false,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
@@ -127,13 +127,13 @@ function initSliders() {
 			//lazy: true,
 
 			/*
-			// Эффекты
+			// Эффекты*/
 			effect: 'fade',
 			autoplay: {
-				delay: 3000,
+				delay: 5000,
 				disableOnInteraction: false,
 			},
-			*/
+
 
 			// Пагинация
 			pagination: {

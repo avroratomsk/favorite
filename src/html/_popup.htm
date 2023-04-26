@@ -1,10 +1,25 @@
-<div id="popup" aria-hidden="true" class="popup">
+<div id="popup" aria-hidden="true" class="popup popup-consution">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
+			<button data-close type="button" class="popup__close">
+				<img src="@img/icons/x-mark.svg" alt="">
+			</button>
+			<h3 class="popup__title">Вам необходима консультация ?</h3>
+			<p class="popup__subtitle">
+				Наши специалисты оперативно выполнят <br> замер <span>бесплатно</span> и вышлют <span>расчет</span>
+			</p>
+			<form action="" class="popup__form">
+				<input type="tel" name="phone" id="phone" class="from-utp__input" placeholder="Ваш номер телефона"
+					data-aos="fade-up" data-aos-delay="100">
+				<input type="text" name="name" id="name" class="from-utp__input" placeholder="Ваше имя"
+					data-aos="fade-up" data-aos-delay="150">
+				<div class="from-utp__buttons">
+					<button class="from-utp__button from-utp__button--red" data-aos="fade-up" data-aos-delay="200">
+						<span>Заказать звонок</span>
+						<img src="@img/icons/call-back.svg" alt="">
+					</button>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>

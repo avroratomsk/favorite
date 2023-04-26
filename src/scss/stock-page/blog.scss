@@ -68,5 +68,35 @@
     &__button {
         background-color: $accent;
         color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+            transition: $speed_animation;
+        }
+
+        span {
+            transition: $speed_animation;
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
+                right: 4%;
+            }
+
+            span {
+                transform: translateX(-10px);
+            }
+        }
     }
 }

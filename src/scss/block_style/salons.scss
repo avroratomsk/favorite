@@ -90,6 +90,11 @@
         margin-top: 8px;
         font-size: 16px;
         line-height: 120%;
+        transition: $speed_animation;
+
+        &:hover {
+            color: $accent;
+        }
     }
 
     // .salons__col--two

@@ -48,6 +48,34 @@
         letter-spacing: 0.01em;
         color: $white;
         margin-top: 40px;
+        position: relative;
+
+        img {
+            position: absolute;
+            right: 0%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            transition: $speed_animation;
+            opacity: 0;
+        }
+
+        span {
+            display: block;
+            transition: $speed_animation;
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
+                right: 4%;
+            }
+
+            span {
+                transform: translateX(-10px);
+            }
+        }
 
         @media screen and (max-width: 700px) {
             width: 100%;

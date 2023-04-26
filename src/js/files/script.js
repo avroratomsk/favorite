@@ -48,7 +48,7 @@ if (mapId) {
 }
 AOS.init({
   once: false,
-  offset: 0,
-  duration: 800,
+  offset: 50,
+  duration: 1000,
   easing: "ease",
 });

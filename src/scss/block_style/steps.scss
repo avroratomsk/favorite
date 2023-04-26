@@ -71,6 +71,34 @@
         background-color: $grey-light;
         color: $accent;
         letter-spacing: .03em;
+        position: relative;
+
+        span {
+            transition: $speed_animation;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            opacity: 0;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            margin-top: 2px;
+            transition: $speed_animation;
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
+                right: 4%;
+            }
+
+            span {
+                margin-left: -20px;
+            }
+        }
     }
 
     // .steps__right

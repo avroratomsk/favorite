@@ -114,6 +114,7 @@
     justify-content: center;
     height: 100%;
 
+
     @media screen and (max-width: 921px) {
         margin: 63px 0px;
     }
@@ -220,6 +221,38 @@
         border-radius: 2px;
         font-weight: 700;
         font-size: 14px;
+        position: relative;
+
+        img {
+            @media screen and (min-width: 921px) {
+                position: absolute;
+                top: 50%;
+                right: 0%;
+                opacity: 0;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
+                transition: $speed_animation;
+            }
+        }
+
+        span {
+            transition: $speed_animation;
+            display: block;
+        }
+
+        @media screen and (min-width: 921px) {
+            &:hover {
+                img {
+                    opacity: 1;
+                    right: 6%;
+                }
+
+                span {
+                    transform: translateX(-5px);
+                }
+            }
+        }
 
         // .from-utp__button--red
 
