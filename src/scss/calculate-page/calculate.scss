@@ -1,0 +1,181 @@
+.calculate {
+
+    // .calculate__container
+
+    &__container {}
+
+    // .calculate__grid
+
+    &__grid {}
+
+    // .calculate__card
+
+    &__card {
+        box-shadow: 0 7px 15px 0 rgba(37, 36, 36, 0.1);
+        border: solid 1px #f9f9f9;
+        background-color: #fff;
+        padding: 35px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+
+    }
+}
+
+.card-calculate {
+
+    // .card-calculate__top
+
+    &__top {
+        margin-bottom: 30px;
+    }
+
+    // .card-calculate__bottom
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        justify-content: center;
+        max-width: 640px;
+        margin: 0 auto 30px;
+    }
+
+    // .card-calculate__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 132%;
+
+        span {
+            color: $accent;
+        }
+    }
+
+    // .card-calculate__body
+
+    &__body {}
+
+    // .card-calculate__item
+
+    &__item {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            pointer-events: none;
+
+            &:checked~label {
+
+                svg {
+                    fill: $accent !important;
+                }
+
+                p {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+            svg {
+                width: 80px;
+                height: 80px;
+                fill: #979797;
+                transition: $speed_animation;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 132%;
+                margin-top: 10px;
+                transition: $speed_animation;
+            }
+        }
+    }
+
+    // .card-calculate__step
+
+    &__step {}
+}
+
+.step-two {
+
+    // .step-two__radio
+
+    &__radio {
+        display: flex;
+        align-items: center;
+
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        input {
+            margin-right: 10px;
+            cursor: pointer;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 1px solid rgba($color: $mainColor, $alpha: .7);
+            border-radius: 50%;
+            position: relative;
+            transition: $speed_animation;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 7px;
+                height: 7px;
+                background-color: $accent;
+                border-radius: 50%;
+                margin-top: -3.5px;
+                margin-left: -3.5px;
+                transform: scale(0);
+                transition: $speed_animation;
+            }
+
+            &:checked {
+                border-color: $accent;
+
+                &::before {
+                    transform: scale(1);
+                }
+            }
+
+            &:checked~label {
+                color: $accent;
+            }
+
+        }
+
+        label {
+            cursor: pointer;
+            color: rgba($color: $mainColor, $alpha: .7);
+            transition: $speed_animation;
+
+            &:hover {
+                color: $accent;
+            }
+        }
+
+    }
+
+    // .step-two__wrapper
+    &__wrapper {
+        margin-right: 30px;
+    }
+}
