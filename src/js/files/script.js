@@ -104,23 +104,31 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 });
 
 
+/*
 
-let cardCalculateStep = document.querySelectorAll('.card-calculate__step');
+ Получение псевдоэлемента у элемента
 
-if (cardCalculateStep) {
-  cardCalculateStep.forEach(card => {
-    card.addEventListener('click', openSelect);
+*/
+// let element = document.querySelector(".form-group");
+// let elementStyle = getComputedStyle(element, "::before")
+// console.log(elementStyle.color);
+
+
+// Калькулятор
+
+let windowItem = document.querySelectorAll('.window__item');
+
+if (windowItem) {
+  windowItem.forEach(item => {
+    item.addEventListener('click', activeWindow);
   })
 
-  function openSelect(e) {
+  function activeWindow(e) {
 
-    let colored = document.querySelector('#colored');
+    windowItem.forEach(item => {
+      item.classList.remove('active')
+    })
 
-    if (e.target.classList.contains('colored')) {
-      colored.classList.add('active-select');
-      console.log('click');
-    } else {
-      colored.classList.remove('active-select');
-    }
+    this.classList.add('active');
   }
 }

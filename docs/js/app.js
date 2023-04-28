@@ -3848,17 +3848,16 @@
             }
         }));
     }));
-    let cardCalculateStep = document.querySelectorAll(".card-calculate__step");
-    if (cardCalculateStep) {
-        cardCalculateStep.forEach((card => {
-            card.addEventListener("click", openSelect);
+    let windowItem = document.querySelectorAll(".window__item");
+    if (windowItem) {
+        windowItem.forEach((item => {
+            item.addEventListener("click", activeWindow);
         }));
-        function openSelect(e) {
-            let colored = document.querySelector("#colored");
-            if (e.target.classList.contains("colored")) {
-                colored.classList.add("active-select");
-                console.log("click");
-            } else colored.classList.remove("active-select");
+        function activeWindow(e) {
+            windowItem.forEach((item => {
+                item.classList.remove("active");
+            }));
+            this.classList.add("active");
         }
     }
     window["FLS"] = true;

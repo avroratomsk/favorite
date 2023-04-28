@@ -155,8 +155,104 @@
                                 На следующем шаге — вы сможете настроить каждую створку.
                             </p>
                         </div>
-                        <div class="card-calculate__window">
+                        <div class="card-calculate__window window" data-id="0">
 
+                            <div class="window__item w1 active" data-id="1">
+                                <div class="window__wrapper">
+                                    <div class="window__bg">
+                                    </div>
+                                    <div class="window__stvorki">
+                                        <div class="window__stvorki--one"></div>
+                                    </div>
+                                </div>
+                                <div class="window__number">1</div>
+                            </div>
+
+                            <div class="window__item w2" data-id="2">
+                                <div class="window__wrapper">
+                                    <div class="window__bg">
+                                    </div>
+                                    <div class="window__stvorki">
+                                        <div class="window__stvorki--one"></div>
+                                        <div class="window__stvorki--two"></div>
+                                    </div>
+                                </div>
+                                <div class="window__number">2</div>
+                            </div>
+
+                            <div class="window__item w3" data-id="3">
+                                <div class="window__wrapper">
+                                    <div class="window__bg">
+                                    </div>
+                                    <div class="window__stvorki">
+                                        <div class="window__stvorki--one"></div>
+                                        <div class="window__stvorki--two"></div>
+                                        <div class="window__stvorki--three"></div>
+                                    </div>
+                                </div>
+                                <div class="window__number">3</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculate__card card-calculate">
+                        <div class="card-calculate__top">
+                            <h4 class="card-calculate__title">
+                                <span>Шаг 5.</span> Укажите размеры окна
+                            </h4>
+                        </div>
+                        <div class="card-calculate__window size" data-id="9">
+                            <div class="size__left">
+                                <div class="size__window"
+                                    style="background-image: url(../img/window/win2_color_1.png);"></div>
+                            </div>
+                            <div class="size__right right-size">
+                                <div class="right-size__body">
+                                    <div class="right-size__range range">
+                                        <div class="range__top">
+                                            <input type="number" value="750" id="range__value">
+                                            <p class="range__name">Ширина</p>
+                                        </div>
+                                        <input type="range" min="100" max="2500" value="1500" class="range-width">
+                                    </div>
+                                    <div class="right-size__range range">
+                                        <div class="range__top">
+                                            <input type="number" value="750" id="range__value" class="range-height">
+                                            <p class="range__name">Высота</p>
+                                        </div>
+                                        <input type="range" min="100" max="1500" value="7500">
+                                    </div>
+                                    <div class="right-size__input">
+                                        <input type="checkbox" name="podok" value="" id="podok"
+                                            class="right-size__checkbox">
+                                        <label for="podok">Подоконник</label>
+                                    </div>
+                                    <div class="right-size__input">
+                                        <div class="right-size__input--wrapper">
+                                            <input type="checkbox" name="otkosy" value="" id="otkosy"
+                                                class="right-size__checkbox">
+                                            <label for="otkosy">Откосы</label>
+                                        </div>
+                                        <div class="right-size__radio">
+                                            <div class="right-size__radio--wrapper">
+                                                <input type="radio" name="otkosy" value="ПВХ" id="pvh">
+                                                <label for="pvh">ПВХ</label>
+                                            </div>
+                                            <div class="right-size__radio--wrapper">
+                                                <input type="radio" name="otkosy" value="ПВХ" id="shtukat">
+                                                <label for="shtukat">Штукатурные</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-size__input">
+                                        <div class="right-size__input--wrapper">
+                                            <input type="checkbox" name="podok" value="" id="otliv"
+                                                class="right-size__checkbox">
+                                            <label for="otliv">Отлив</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

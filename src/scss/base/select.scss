@@ -5,6 +5,11 @@ Select c dropdown на JS
     // opacity: 0;
     // pointer-events: none;
     transition: $speed_animation;
+
+    &:before {
+        content: '';
+        color: red;
+    }
 }
 
 .form-group.active-select {
