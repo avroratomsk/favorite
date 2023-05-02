@@ -3860,6 +3860,15 @@
             this.classList.add("active");
         }
     }
+    let rangeInputs = document.querySelectorAll('input[type="range"]');
+    rangeInputs.forEach((input => {
+        input.addEventListener("input", getValueInputRange);
+    }));
+    function getValueInputRange(e) {
+        let parent = e.target.parentElement;
+        let value = parent.querySelector('p[class="value"]');
+        value.innerText = e.target.value;
+    }
     window["FLS"] = true;
     isWebp();
     menuInit();

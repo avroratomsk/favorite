@@ -696,6 +696,7 @@
         margin-bottom: 5px;
 
         input[type="number"] {
+            text-align: center;
             outline: none;
             width: 50px;
             border: 1px solid rgba($color: $mainColor, $alpha: .3);
@@ -720,6 +721,9 @@
     &__name {
         color: rgba($color: $mainColor, $alpha: .5);
     }
+
+    // .range__value
+    &__value {}
 }
 
 .range-width,
