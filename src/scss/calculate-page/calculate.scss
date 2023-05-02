@@ -735,3 +735,141 @@
 
 
 .range {}
+
+.card-calculate {
+
+    // .card-calculate__window
+
+    &__window {}
+}
+
+.opening {
+
+    // .opening__body
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        max-width: 640px;
+        margin: auto;
+    }
+
+    // .opening__left
+
+    &__left {
+        margin-right: 50px;
+    }
+
+    // .opening__right
+
+    &__right {}
+}
+
+
+.radio {
+    width: 100%;
+
+    // .radio__wrapper
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+    }
+
+    // .radio__label
+
+    &__label {
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    // .radio__input
+
+    &__input {
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border: 1px solid rgba($color: $mainColor, $alpha: .6);
+        border-radius: 50px;
+        position: relative;
+        margin-right: 10px;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 7px;
+            height: 7px;
+            margin-top: -3.5px;
+            margin-left: -3.5px;
+            background-color: $accent;
+            border-radius: 50%;
+            transition: $speed_animation;
+            transform: scale(0);
+        }
+
+        &:checked::before {
+            transform: scale(1);
+        }
+    }
+
+    // .radio__option
+    &__option {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    // .radio__title
+
+    &__title {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.checkbox {
+
+    // .checkbox__wrapper
+
+    &__wrapper {
+        margin-bottom: 10px;
+
+        input {
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 1px solid rgba($color: $mainColor, $alpha: .6);
+            position: relative;
+            margin-right: 10px;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 7px;
+                height: 7px;
+                margin-top: -3.5px;
+                margin-left: -3.5px;
+                background-color: $accent;
+                transition: $speed_animation;
+                transform: scale(0);
+            }
+
+            &:checked::before {
+                transform: scale(1);
+
+            }
+        }
+
+        label {
+            font-size: 13px;
+            cursor: pointer;
+        }
+    }
+}

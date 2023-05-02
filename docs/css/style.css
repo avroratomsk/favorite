@@ -3208,6 +3208,133 @@ select:-webkit-autofill:focus {
   width: 100%;
 }
 
+.opening__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 640px;
+  margin: auto;
+}
+
+.opening__left {
+  margin-right: 50px;
+}
+
+.radio {
+  width: 100%;
+}
+
+.radio__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio__label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.radio__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(27, 27, 27, 0.6);
+  border-radius: 50px;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.radio__input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -3.5px;
+  margin-left: -3.5px;
+  background-color: #BE2E21;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+.radio__input:checked::before {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.radio__option {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.radio__title {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox__wrapper {
+  margin-bottom: 10px;
+}
+
+.checkbox__wrapper input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(27, 27, 27, 0.6);
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox__wrapper input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -3.5px;
+  margin-left: -3.5px;
+  background-color: #BE2E21;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+.checkbox__wrapper input:checked::before {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.checkbox__wrapper label {
+  font-size: 13px;
+  cursor: pointer;
+}
+
 .page__container {
   border: 1px solid #000;
   min-height: 80px;
