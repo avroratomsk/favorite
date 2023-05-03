@@ -1,0 +1,392 @@
+/* 
+Вывод изображений в карточке
+Шаг 4. Укажите размеры окна
+*/
+.window {
+
+    & .w1 .window__wrapper {
+        width: 106px;
+    }
+
+    & .w2 .window__wrapper {
+        width: 200px;
+    }
+
+    & .w3 .window__wrapper {
+        width: 294px;
+    }
+
+    .w1.active .window__stvorki {
+        background-image: url(../img/window/win_left.jpg);
+    }
+
+    .w2.active .window__stvorki {
+
+        .window__stvorki--one {
+            background-image: url(../img/window/win_left.jpg);
+        }
+
+        .window__stvorki--two {
+            background-image: url(../img/window/win_middle.jpg);
+        }
+
+    }
+
+    .w3.active .window__stvorki {
+        .window__stvorki--one {
+            background-image: url(../img/window/win_left.jpg);
+        }
+
+        .window__stvorki--two {
+            background-image: url(../img/window/win_middle.jpg);
+        }
+
+        .window__stvorki--three {
+            background-image: url(../img/window/win_right.jpg);
+        }
+    }
+
+
+
+    &[data-color="0"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.png);
+        }
+
+    }
+
+    &[data-color="1"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.color_1.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.color_1.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.color_1.png);
+        }
+
+    }
+
+    &[data-color="2"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.color_2.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.color_2.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.color_2.png);
+        }
+
+    }
+
+    &[data-color="3"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.color_3.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.color_3.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.color_3.png);
+        }
+
+    }
+
+    &[data-color="4"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.color_4.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.color_4.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.color_4.png);
+        }
+
+    }
+
+    &[data-color="5"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.color_5.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.color_5.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.color_5.png);
+        }
+
+    }
+
+    &[data-color="6"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.color_6.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.color_6.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.color_6.png);
+        }
+
+    }
+
+    &[data-color="7"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.color_7.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.color_7.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.color_7.png);
+        }
+
+    }
+
+    &[data-color="8"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.color_8.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.color_8.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.color_8.png);
+        }
+
+    }
+
+    &[data-color="9"] {
+
+        & .w1 .window__bg {
+            background-image: url(../img/window/strokes.1.color_9.png);
+        }
+
+        & .w2 .window__bg {
+            background-image: url(../img/window/strokes.2.color_9.png);
+        }
+
+        & .w3 .window__bg {
+            background-image: url(../img/window/strokes.3.color_9.png);
+        }
+
+    }
+}
+
+
+/* 
+Вывод изображений в карточке
+Шаг 5. Укажите размеры окна
+*/
+.size {
+
+    &[data-color="0"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1.svg);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2.svg);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3.svg);
+        }
+    }
+
+    &[data-color="1"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1_color_1.png);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2_color_1.png);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3_color_1.png);
+        }
+    }
+
+    &[data-color="2"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1_color_2.png);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2_color_2.png);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3_color_2.png);
+        }
+    }
+
+    &[data-color="3"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1_color_3.png);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2_color_3.png);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3_color_3.png);
+        }
+    }
+
+    &[data-color="4"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1_color_4.png);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2_color_4.png);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3_color_4.png);
+        }
+    }
+
+    &[data-color="5"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1_color_5.png);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2_color_5.png);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3_color_5.png);
+        }
+    }
+
+    &[data-color="6"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1_color_6.png);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2_color_6.png);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3_color_6.png);
+        }
+    }
+
+    &[data-color="7"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1_color_7.png);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2_color_7.png);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3_color_7.png);
+        }
+    }
+
+    &[data-color="8"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1_color_8.png);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2_color_8.png);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3_color_8.png);
+        }
+    }
+
+    &[data-color="9"] {
+        .size__window[data-id="1"] {
+            background-image: url(../img/window/win1_color_9.png);
+        }
+
+        .size__window[data-id="2"] {
+            background-image: url(../img/window/win2_color_9.png);
+        }
+
+        .size__window[data-id="3"] {
+            background-image: url(../img/window/win3_color_9.png);
+        }
+    }
+}
+
+.left-opening {
+    .w1 {
+        display: none;
+    }
+
+    .w2 {
+        display: none;
+    }
+
+    .w3 {
+        display: none;
+    }
+
+    & [data-active="1"] {
+        .w1 {
+            display: block;
+        }
+    }
+
+    & [data-active="2"] {
+        .w2 {
+            display: block;
+        }
+    }
+
+    & [data-active="3"] {
+        .w3 {
+            display: block;
+        }
+    }
+}
+
+.opening__right {}

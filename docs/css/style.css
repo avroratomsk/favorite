@@ -2756,212 +2756,18 @@ select:-webkit-autofill:focus {
   color: #BE2E21;
 }
 
+.step-two .form-group {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.step-two .form-group.active-dropdown {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .step-two__wrapper {
   margin-right: 30px;
-}
-
-.window {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.window .w1 .window__wrapper {
-  width: 106px;
-}
-
-.window .w2 .window__wrapper {
-  width: 200px;
-}
-
-.window .w3 .window__wrapper {
-  width: 294px;
-}
-
-.no-webp .window .w1.active .window__stvorki{
-  background-image: url(../img/window/win_left.jpg); }
-
-.no-webp .window .w2.active .window__stvorki .window__stvorki--one{
-  background-image: url(../img/window/win_left.jpg); }
-
-.no-webp .window .w2.active .window__stvorki .window__stvorki--two{
-  background-image: url(../img/window/win_middle.jpg); }
-
-.no-webp .window .w3.active .window__stvorki .window__stvorki--one{
-  background-image: url(../img/window/win_left.jpg); }
-
-.no-webp .window .w3.active .window__stvorki .window__stvorki--two{
-  background-image: url(../img/window/win_middle.jpg); }
-
-.no-webp .window .w3.active .window__stvorki .window__stvorki--three{
-  background-image: url(../img/window/win_right.jpg); }
-
-.no-webp .window[data-id="0"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.png); }
-
-.no-webp .window[data-id="0"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.png); }
-
-.no-webp .window[data-id="0"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.png); }
-
-.no-webp .window[data-id="1"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.color_1.png); }
-
-.no-webp .window[data-id="1"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.color_1.png); }
-
-.no-webp .window[data-id="1"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.color_1.png); }
-
-.no-webp .window[data-id="2"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.color_2.png); }
-
-.no-webp .window[data-id="2"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.color_2.png); }
-
-.no-webp .window[data-id="2"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.color_2.png); }
-
-.no-webp .window[data-id="3"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.color_3.png); }
-
-.no-webp .window[data-id="3"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.color_3.png); }
-
-.no-webp .window[data-id="3"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.color_3.png); }
-
-.no-webp .window[data-id="4"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.color_4.png); }
-
-.no-webp .window[data-id="4"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.color_4.png); }
-
-.no-webp .window[data-id="4"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.color_4.png); }
-
-.no-webp .window[data-id="5"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.color_5.png); }
-
-.no-webp .window[data-id="5"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.color_5.png); }
-
-.no-webp .window[data-id="5"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.color_5.png); }
-
-.no-webp .window[data-id="6"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.color_6.png); }
-
-.no-webp .window[data-id="6"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.color_6.png); }
-
-.no-webp .window[data-id="6"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.color_6.png); }
-
-.no-webp .window[data-id="7"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.color_7.png); }
-
-.no-webp .window[data-id="7"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.color_7.png); }
-
-.no-webp .window[data-id="7"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.color_7.png); }
-
-.no-webp .window[data-id="8"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.color_8.png); }
-
-.no-webp .window[data-id="8"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.color_8.png); }
-
-.no-webp .window[data-id="8"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.color_8.png); }
-
-.no-webp .window[data-id="9"] .w1 .window__bg{
-  background-image: url(../img/window/strokes.1.color_9.png); }
-
-.no-webp .window[data-id="9"] .w2 .window__bg{
-  background-image: url(../img/window/strokes.2.color_9.png); }
-
-.no-webp .window[data-id="9"] .w3 .window__bg{
-  background-image: url(../img/window/strokes.3.color_9.png); }
-
-.window__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  cursor: pointer;
-  position: relative;
-}
-
-.window__wrapper {
-  width: 100%;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-}
-
-.window__wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-}
-
-.window__wrapper:hover::before {
-  background-color: lightblue;
-}
-
-.window__bg {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  position: relative;
-  z-index: 2;
-}
-
-.window__stvorki {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid #000;
-}
-
-.window__stvorki--one,
-.window__stvorki--two,
-.window__stvorki--three {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.window__number {
-  display: block;
-  margin-top: 10px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 120%;
-  color: rgba(27, 27, 27, 0.6);
 }
 
 .size {
@@ -3215,7 +3021,7 @@ select:-webkit-autofill:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 640px;
+  max-width: 550px;
   margin: auto;
 }
 
@@ -3283,6 +3089,7 @@ select:-webkit-autofill:focus {
 .radio__option {
   margin-left: 30px;
   margin-top: 20px;
+  display: none;
 }
 
 .radio__title {
@@ -3333,6 +3140,411 @@ select:-webkit-autofill:focus {
 .checkbox__wrapper label {
   font-size: 13px;
   cursor: pointer;
+}
+
+.additionally {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.additionally__title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.additionally__wrapper--pb {
+  margin-bottom: 20px;
+}
+
+.additionally__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.additionally__wrapper label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.additionally__wrapper input {
+  border: 1px solid rgba(27, 27, 27, 0.6);
+  height: 40px;
+  padding: 0px 10px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+.additionally__wrapper input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.additionally__wrapper input::-moz-placeholder {
+  font-size: 14px;
+}
+
+.additionally__wrapper input:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.additionally__wrapper input::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.additionally__wrapper input::placeholder {
+  font-size: 14px;
+}
+
+.additionally__wrapper input input::-webkit-outer-spin-button,
+.additionally__wrapper input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.additionally__wrapper input input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* 
+Вывод изображений в карточке
+Шаг 4. Укажите размеры окна
+*/
+
+.window .w1 .window__wrapper {
+  width: 106px;
+}
+
+.window .w2 .window__wrapper {
+  width: 200px;
+}
+
+.window .w3 .window__wrapper {
+  width: 294px;
+}
+
+.no-webp .window .w1.active .window__stvorki{
+  background-image: url(../img/window/win_left.jpg); }
+
+.no-webp .window .w2.active .window__stvorki .window__stvorki--one{
+  background-image: url(../img/window/win_left.jpg); }
+
+.no-webp .window .w2.active .window__stvorki .window__stvorki--two{
+  background-image: url(../img/window/win_middle.jpg); }
+
+.no-webp .window .w3.active .window__stvorki .window__stvorki--one{
+  background-image: url(../img/window/win_left.jpg); }
+
+.no-webp .window .w3.active .window__stvorki .window__stvorki--two{
+  background-image: url(../img/window/win_middle.jpg); }
+
+.no-webp .window .w3.active .window__stvorki .window__stvorki--three{
+  background-image: url(../img/window/win_right.jpg); }
+
+.no-webp .window[data-color="0"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.png); }
+
+.no-webp .window[data-color="0"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.png); }
+
+.no-webp .window[data-color="0"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.png); }
+
+.no-webp .window[data-color="1"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.color_1.png); }
+
+.no-webp .window[data-color="1"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.color_1.png); }
+
+.no-webp .window[data-color="1"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.color_1.png); }
+
+.no-webp .window[data-color="2"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.color_2.png); }
+
+.no-webp .window[data-color="2"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.color_2.png); }
+
+.no-webp .window[data-color="2"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.color_2.png); }
+
+.no-webp .window[data-color="3"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.color_3.png); }
+
+.no-webp .window[data-color="3"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.color_3.png); }
+
+.no-webp .window[data-color="3"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.color_3.png); }
+
+.no-webp .window[data-color="4"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.color_4.png); }
+
+.no-webp .window[data-color="4"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.color_4.png); }
+
+.no-webp .window[data-color="4"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.color_4.png); }
+
+.no-webp .window[data-color="5"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.color_5.png); }
+
+.no-webp .window[data-color="5"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.color_5.png); }
+
+.no-webp .window[data-color="5"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.color_5.png); }
+
+.no-webp .window[data-color="6"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.color_6.png); }
+
+.no-webp .window[data-color="6"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.color_6.png); }
+
+.no-webp .window[data-color="6"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.color_6.png); }
+
+.no-webp .window[data-color="7"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.color_7.png); }
+
+.no-webp .window[data-color="7"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.color_7.png); }
+
+.no-webp .window[data-color="7"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.color_7.png); }
+
+.no-webp .window[data-color="8"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.color_8.png); }
+
+.no-webp .window[data-color="8"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.color_8.png); }
+
+.no-webp .window[data-color="8"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.color_8.png); }
+
+.no-webp .window[data-color="9"] .w1 .window__bg{
+  background-image: url(../img/window/strokes.1.color_9.png); }
+
+.no-webp .window[data-color="9"] .w2 .window__bg{
+  background-image: url(../img/window/strokes.2.color_9.png); }
+
+.no-webp .window[data-color="9"] .w3 .window__bg{
+  background-image: url(../img/window/strokes.3.color_9.png); }
+
+/* 
+Вывод изображений в карточке
+Шаг 5. Укажите размеры окна
+*/
+
+.size[data-color="0"] .size__window[data-id="1"] {
+  background-image: url(../img/window/win1.svg);
+}
+
+.size[data-color="0"] .size__window[data-id="2"] {
+  background-image: url(../img/window/win2.svg);
+}
+
+.size[data-color="0"] .size__window[data-id="3"] {
+  background-image: url(../img/window/win3.svg);
+}
+
+.no-webp .size[data-color="1"] .size__window[data-id="1"]{
+  background-image: url(../img/window/win1_color_1.png); }
+
+.no-webp .size[data-color="1"] .size__window[data-id="2"]{
+  background-image: url(../img/window/win2_color_1.png); }
+
+.no-webp .size[data-color="1"] .size__window[data-id="3"]{
+  background-image: url(../img/window/win3_color_1.png); }
+
+.no-webp .size[data-color="2"] .size__window[data-id="1"]{
+  background-image: url(../img/window/win1_color_2.png); }
+
+.no-webp .size[data-color="2"] .size__window[data-id="2"]{
+  background-image: url(../img/window/win2_color_2.png); }
+
+.no-webp .size[data-color="2"] .size__window[data-id="3"]{
+  background-image: url(../img/window/win3_color_2.png); }
+
+.no-webp .size[data-color="3"] .size__window[data-id="1"]{
+  background-image: url(../img/window/win1_color_3.png); }
+
+.no-webp .size[data-color="3"] .size__window[data-id="2"]{
+  background-image: url(../img/window/win2_color_3.png); }
+
+.no-webp .size[data-color="3"] .size__window[data-id="3"]{
+  background-image: url(../img/window/win3_color_3.png); }
+
+.no-webp .size[data-color="4"] .size__window[data-id="1"]{
+  background-image: url(../img/window/win1_color_4.png); }
+
+.no-webp .size[data-color="4"] .size__window[data-id="2"]{
+  background-image: url(../img/window/win2_color_4.png); }
+
+.no-webp .size[data-color="4"] .size__window[data-id="3"]{
+  background-image: url(../img/window/win3_color_4.png); }
+
+.no-webp .size[data-color="5"] .size__window[data-id="1"]{
+  background-image: url(../img/window/win1_color_5.png); }
+
+.no-webp .size[data-color="5"] .size__window[data-id="2"]{
+  background-image: url(../img/window/win2_color_5.png); }
+
+.no-webp .size[data-color="5"] .size__window[data-id="3"]{
+  background-image: url(../img/window/win3_color_5.png); }
+
+.no-webp .size[data-color="6"] .size__window[data-id="1"]{
+  background-image: url(../img/window/win1_color_6.png); }
+
+.no-webp .size[data-color="6"] .size__window[data-id="2"]{
+  background-image: url(../img/window/win2_color_6.png); }
+
+.no-webp .size[data-color="6"] .size__window[data-id="3"]{
+  background-image: url(../img/window/win3_color_6.png); }
+
+.no-webp .size[data-color="7"] .size__window[data-id="1"]{
+  background-image: url(../img/window/win1_color_7.png); }
+
+.no-webp .size[data-color="7"] .size__window[data-id="2"]{
+  background-image: url(../img/window/win2_color_7.png); }
+
+.no-webp .size[data-color="7"] .size__window[data-id="3"]{
+  background-image: url(../img/window/win3_color_7.png); }
+
+.no-webp .size[data-color="8"] .size__window[data-id="1"]{
+  background-image: url(../img/window/win1_color_8.png); }
+
+.no-webp .size[data-color="8"] .size__window[data-id="2"]{
+  background-image: url(../img/window/win2_color_8.png); }
+
+.no-webp .size[data-color="8"] .size__window[data-id="3"]{
+  background-image: url(../img/window/win3_color_8.png); }
+
+.no-webp .size[data-color="9"] .size__window[data-id="1"]{
+  background-image: url(../img/window/win1_color_9.png); }
+
+.no-webp .size[data-color="9"] .size__window[data-id="2"]{
+  background-image: url(../img/window/win2_color_9.png); }
+
+.no-webp .size[data-color="9"] .size__window[data-id="3"]{
+  background-image: url(../img/window/win3_color_9.png); }
+
+.left-opening .w1 {
+  display: none;
+}
+
+.left-opening .w2 {
+  display: none;
+}
+
+.left-opening .w3 {
+  display: none;
+}
+
+.left-opening [data-active="1"] .w1 {
+  display: block;
+}
+
+.left-opening [data-active="2"] .w2 {
+  display: block;
+}
+
+.left-opening [data-active="3"] .w3 {
+  display: block;
+}
+
+.window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.window__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.window__wrapper {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.window__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.window__wrapper:hover::before {
+  background-color: lightblue;
+}
+
+.window__bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.window__stvorki {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #000;
+}
+
+.window__stvorki--one,
+.window__stvorki--two,
+.window__stvorki--three {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.window__number {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: rgba(27, 27, 27, 0.6);
 }
 
 .page__container {
@@ -4240,62 +4452,116 @@ select:-webkit-autofill:focus {
 
 .webp .window .w3.active .window__stvorki .window__stvorki--three{ background-image: url(../img/window/win_right.webp); }
 
-.webp .window[data-id="0"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.webp); }
+.webp .window[data-color="0"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.webp); }
 
-.webp .window[data-id="0"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.webp); }
+.webp .window[data-color="0"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.webp); }
 
-.webp .window[data-id="0"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.webp); }
+.webp .window[data-color="0"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.webp); }
 
-.webp .window[data-id="1"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_1.webp); }
+.webp .window[data-color="1"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_1.webp); }
 
-.webp .window[data-id="1"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_1.webp); }
+.webp .window[data-color="1"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_1.webp); }
 
-.webp .window[data-id="1"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_1.webp); }
+.webp .window[data-color="1"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_1.webp); }
 
-.webp .window[data-id="2"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_2.webp); }
+.webp .window[data-color="2"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_2.webp); }
 
-.webp .window[data-id="2"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_2.webp); }
+.webp .window[data-color="2"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_2.webp); }
 
-.webp .window[data-id="2"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_2.webp); }
+.webp .window[data-color="2"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_2.webp); }
 
-.webp .window[data-id="3"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_3.webp); }
+.webp .window[data-color="3"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_3.webp); }
 
-.webp .window[data-id="3"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_3.webp); }
+.webp .window[data-color="3"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_3.webp); }
 
-.webp .window[data-id="3"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_3.webp); }
+.webp .window[data-color="3"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_3.webp); }
 
-.webp .window[data-id="4"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_4.webp); }
+.webp .window[data-color="4"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_4.webp); }
 
-.webp .window[data-id="4"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_4.webp); }
+.webp .window[data-color="4"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_4.webp); }
 
-.webp .window[data-id="4"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_4.webp); }
+.webp .window[data-color="4"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_4.webp); }
 
-.webp .window[data-id="5"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_5.webp); }
+.webp .window[data-color="5"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_5.webp); }
 
-.webp .window[data-id="5"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_5.webp); }
+.webp .window[data-color="5"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_5.webp); }
 
-.webp .window[data-id="5"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_5.webp); }
+.webp .window[data-color="5"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_5.webp); }
 
-.webp .window[data-id="6"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_6.webp); }
+.webp .window[data-color="6"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_6.webp); }
 
-.webp .window[data-id="6"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_6.webp); }
+.webp .window[data-color="6"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_6.webp); }
 
-.webp .window[data-id="6"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_6.webp); }
+.webp .window[data-color="6"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_6.webp); }
 
-.webp .window[data-id="7"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_7.webp); }
+.webp .window[data-color="7"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_7.webp); }
 
-.webp .window[data-id="7"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_7.webp); }
+.webp .window[data-color="7"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_7.webp); }
 
-.webp .window[data-id="7"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_7.webp); }
+.webp .window[data-color="7"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_7.webp); }
 
-.webp .window[data-id="8"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_8.webp); }
+.webp .window[data-color="8"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_8.webp); }
 
-.webp .window[data-id="8"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_8.webp); }
+.webp .window[data-color="8"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_8.webp); }
 
-.webp .window[data-id="8"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_8.webp); }
+.webp .window[data-color="8"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_8.webp); }
 
-.webp .window[data-id="9"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_9.webp); }
+.webp .window[data-color="9"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_9.webp); }
 
-.webp .window[data-id="9"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_9.webp); }
+.webp .window[data-color="9"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_9.webp); }
 
-.webp .window[data-id="9"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_9.webp); }
+.webp .window[data-color="9"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_9.webp); }
+
+.webp .size[data-color="1"] .size__window[data-id="1"]{ background-image: url(../img/window/win1_color_1.webp); }
+
+.webp .size[data-color="1"] .size__window[data-id="2"]{ background-image: url(../img/window/win2_color_1.webp); }
+
+.webp .size[data-color="1"] .size__window[data-id="3"]{ background-image: url(../img/window/win3_color_1.webp); }
+
+.webp .size[data-color="2"] .size__window[data-id="1"]{ background-image: url(../img/window/win1_color_2.webp); }
+
+.webp .size[data-color="2"] .size__window[data-id="2"]{ background-image: url(../img/window/win2_color_2.webp); }
+
+.webp .size[data-color="2"] .size__window[data-id="3"]{ background-image: url(../img/window/win3_color_2.webp); }
+
+.webp .size[data-color="3"] .size__window[data-id="1"]{ background-image: url(../img/window/win1_color_3.webp); }
+
+.webp .size[data-color="3"] .size__window[data-id="2"]{ background-image: url(../img/window/win2_color_3.webp); }
+
+.webp .size[data-color="3"] .size__window[data-id="3"]{ background-image: url(../img/window/win3_color_3.webp); }
+
+.webp .size[data-color="4"] .size__window[data-id="1"]{ background-image: url(../img/window/win1_color_4.webp); }
+
+.webp .size[data-color="4"] .size__window[data-id="2"]{ background-image: url(../img/window/win2_color_4.webp); }
+
+.webp .size[data-color="4"] .size__window[data-id="3"]{ background-image: url(../img/window/win3_color_4.webp); }
+
+.webp .size[data-color="5"] .size__window[data-id="1"]{ background-image: url(../img/window/win1_color_5.webp); }
+
+.webp .size[data-color="5"] .size__window[data-id="2"]{ background-image: url(../img/window/win2_color_5.webp); }
+
+.webp .size[data-color="5"] .size__window[data-id="3"]{ background-image: url(../img/window/win3_color_5.webp); }
+
+.webp .size[data-color="6"] .size__window[data-id="1"]{ background-image: url(../img/window/win1_color_6.webp); }
+
+.webp .size[data-color="6"] .size__window[data-id="2"]{ background-image: url(../img/window/win2_color_6.webp); }
+
+.webp .size[data-color="6"] .size__window[data-id="3"]{ background-image: url(../img/window/win3_color_6.webp); }
+
+.webp .size[data-color="7"] .size__window[data-id="1"]{ background-image: url(../img/window/win1_color_7.webp); }
+
+.webp .size[data-color="7"] .size__window[data-id="2"]{ background-image: url(../img/window/win2_color_7.webp); }
+
+.webp .size[data-color="7"] .size__window[data-id="3"]{ background-image: url(../img/window/win3_color_7.webp); }
+
+.webp .size[data-color="8"] .size__window[data-id="1"]{ background-image: url(../img/window/win1_color_8.webp); }
+
+.webp .size[data-color="8"] .size__window[data-id="2"]{ background-image: url(../img/window/win2_color_8.webp); }
+
+.webp .size[data-color="8"] .size__window[data-id="3"]{ background-image: url(../img/window/win3_color_8.webp); }
+
+.webp .size[data-color="9"] .size__window[data-id="1"]{ background-image: url(../img/window/win1_color_9.webp); }
+
+.webp .size[data-color="9"] .size__window[data-id="2"]{ background-image: url(../img/window/win2_color_9.webp); }
+
+.webp .size[data-color="9"] .size__window[data-id="3"]{ background-image: url(../img/window/win3_color_9.webp); }

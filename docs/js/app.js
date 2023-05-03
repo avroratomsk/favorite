@@ -3833,6 +3833,7 @@
                 dropDownBtn.focus();
                 dropDownInput.value = this.dataset.value;
                 dropDownList.classList.remove("dropdown__list--visible");
+                dropDownValue(dropDownInput.value);
             }));
         }));
         document.addEventListener("click", (function(e) {
@@ -3848,18 +3849,6 @@
             }
         }));
     }));
-    let windowItem = document.querySelectorAll(".window__item");
-    if (windowItem) {
-        windowItem.forEach((item => {
-            item.addEventListener("click", activeWindow);
-        }));
-        function activeWindow(e) {
-            windowItem.forEach((item => {
-                item.classList.remove("active");
-            }));
-            this.classList.add("active");
-        }
-    }
     let rangeInputs = document.querySelectorAll('input[type="range"]');
     rangeInputs.forEach((input => {
         input.addEventListener("input", getValueInputRange);
@@ -3869,6 +3858,60 @@
         let value = parent.querySelector('p[class="value"]');
         value.innerText = e.target.value;
     }
+    let windowItem = document.querySelectorAll(".stvorki");
+    if (windowItem) {
+        windowItem.forEach((item => {
+            item.addEventListener("click", activeWindow);
+        }));
+        function activeWindow(e) {
+            windowItem.forEach((item => {
+                item.classList.remove("active");
+            }));
+            this.classList.add("active");
+            let getData = this.dataset.window;
+            document.querySelector(".size__window").dataset.id = getData;
+            document.querySelector("[data-active]").dataset.active = getData;
+        }
+    }
+    function dropDownValue(value) {
+        let getElementDataId = document.querySelectorAll("[data-color]");
+        getElementDataId.forEach((elem => {
+            elem.dataset.color = value;
+        }));
+    }
+    let colors = document.querySelectorAll(".colors");
+    colors.forEach((item => {
+        if (item.checked) {
+            console.log(item.dataset.value);
+            let getIdColor = item.dataset.value;
+            dropDownValue(getIdColor);
+        }
+    }));
+    colors.forEach((item => {
+        item.addEventListener("click", (function(e) {
+            if (this.checked) {
+                let getIdColor = this.dataset.value;
+                if (getIdColor == 1) {
+                    document.querySelector(".step-two__radio .form-group").classList.add("active-dropdown");
+                    document.querySelector(".size__window").dataset.id = getIdColor;
+                } else {
+                    document.querySelector(".step-two__radio .form-group").classList.remove("active-dropdown");
+                    dropDownValue(getIdColor);
+                }
+            }
+        }));
+    }));
+    let sash_type = document.querySelectorAll(".radio__input");
+    let openingRight = document.querySelector(".opening__right");
+    openingRight.addEventListener("click", (function(e) {
+        sash_type.forEach((item => {
+            if (item.checked) {
+                let parent = item.closest(".radio");
+                let option = parent.querySelector(".radio__option");
+                if (option != null) option.classList.add("visible_option");
+            }
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();

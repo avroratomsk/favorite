@@ -6,12 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230502175456">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230503175728">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230502175456" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230503175728" rel="stylesheet">
 </head>
 
 <body>
@@ -252,7 +252,7 @@
 						</div>
 						<div class="card-calculate__step step-two">
 							<div class="step-two__radio">
-								<input type="radio" name="step-two" id="economy" value="Эконом">
+								<input type="radio" name="step-two" id="economy" value="Эконом" checked>
 								<label for="economy">Эконом</label>
 							</div>
 							<div class="step-two__radio">
@@ -274,12 +274,12 @@
 						</div>
 						<div class="card-calculate__step step-two">
 							<div class="step-two__radio">
-								<input type="radio" name="step-three" id="white" value="Белый">
+								<input type="radio" name="step-three" id="white" value="Белый" data-value="0" class="colors" checked>
 								<label for="white">Белый</label>
 							</div>
 							<div class="step-two__radio step-two__radio--flex">
 								<div class="step-two__wrapper">
-									<input type="radio" name="step-three" id="colored" value="Стандарт">
+									<input type="radio" name="step-three" id="colored" data-value="1" value="Стандарт" class="colors">
 									<label for="colored">Цветной</label>
 								</div>
 
@@ -287,19 +287,19 @@
 									<div class="dropdown">
 										<button class="dropdown__button">Выберите цвет</button>
 										<ul class="dropdown__list">
-											<li class="dropdown__list-item" data-value="dub">
+											<li class="dropdown__list-item" data-value="1">
 												Рустикальный дуб
 											</li>
-											<li class="dropdown__list-item" data-value="lessons">
+											<li class="dropdown__list-item" data-value="2">
 												Махагон
 											</li>
-											<li class="dropdown__list-item" data-value="photo">
+											<li class="dropdown__list-item" data-value="3">
 												Натуральный дуб
 											</li>
-											<li class="dropdown__list-item" data-value="sport">
+											<li class="dropdown__list-item" data-value="4">
 												Светлый дуб
 											</li>
-											<li class="dropdown__list-item" data-value="sport">
+											<li class="dropdown__list-item" data-value="5">
 												Серый
 											</li>
 										</ul>
@@ -319,8 +319,8 @@
 								На следующем шаге — вы сможете настроить каждую створку.
 							</p>
 						</div>
-						<div class="card-calculate__window window" data-id="0">
-							<div class="window__item w1 active" data-id="1">
+						<div class="card-calculate__window window" data-color="0">
+							<div class="window__item w1 active stvorki" data-window="1">
 								<div class="window__wrapper">
 									<div class="window__bg">
 									</div>
@@ -328,10 +328,10 @@
 										<div class="window__stvorki--one"></div>
 									</div>
 								</div>
-								<div class="window__number">1</div>
+								<div class="window__number">Одна створка</div>
 							</div>
 
-							<div class="window__item w2" data-id="2">
+							<div class="window__item w2 stvorki" data-window="2">
 								<div class="window__wrapper">
 									<div class="window__bg">
 									</div>
@@ -340,10 +340,10 @@
 										<div class="window__stvorki--two"></div>
 									</div>
 								</div>
-								<div class="window__number">2</div>
+								<div class="window__number">Две створки</div>
 							</div>
 
-							<div class="window__item w3" data-id="3">
+							<div class="window__item w3 stvorki" data-window="3">
 								<div class="window__wrapper">
 									<div class="window__bg">
 									</div>
@@ -353,7 +353,7 @@
 										<div class="window__stvorki--three"></div>
 									</div>
 								</div>
-								<div class="window__number">3</div>
+								<div class="window__number">Три створки</div>
 							</div>
 						</div>
 					</div>
@@ -364,9 +364,9 @@
 								<span>Шаг 5.</span> Укажите размеры окна
 							</h4>
 						</div>
-						<div class="card-calculate__window size" data-id="9">
+						<div class="card-calculate__window size" data-color="1">
 							<div class="size__left">
-								<div class="size__window" style="background-image: url(img/window/win2_color_1.png);"></div>
+								<div class="size__window" data-id="1"></div>
 							</div>
 							<div class="size__right right-size">
 								<div class="right-size__body">
@@ -424,13 +424,34 @@
 						<div class="card-calculate__window opening">
 							<div class="opening__body">
 								<div class="opening__left left-opening">
-									<div class="card-calculate__window window" data-id="0">
-										<div class="window__item w3" data-id="1">
+									<div class="card-calculate__window window" data-color="1" data-active="1">
+										<div class="window__item w1">
 											<div class="window__wrapper">
 												<div class="window__bg">
 												</div>
-												<div class="window__stvorki">
-													<div class="window__stvorki--one" style="background: url(img/window/strokes.open.l.png);">
+												<div class="window__stvorki" data-stvorky="deaf">
+													<div class="window__stvorki--one">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="window__item w2">
+											<div class="window__wrapper">
+												<div class="window__bg">
+												</div>
+												<div class="window__stvorki" data-stvorky="povorotnaya">
+													<div class="window__stvorki--one">
+													</div>
+													<div class="window__stvorki--two"></div>
+												</div>
+											</div>
+										</div>
+										<div class="window__item w3">
+											<div class="window__wrapper">
+												<div class="window__bg">
+												</div>
+												<div class="window__stvorki" data-stvorky="povorotno-otkidnaya">
+													<div class="window__stvorki--one">
 													</div>
 													<div class="window__stvorki--two"></div>
 													<div class="window__stvorki--three"></div>
@@ -495,7 +516,56 @@
 								<span>Шаг 7.</span> Выберите дополнительные опции
 							</h4>
 						</div>
-						<div class="card-calculate__window">
+						<div class="card-calculate__window additionally">
+							<div class="additionally__col">
+								<p class="additionally__title">Подоконник</p>
+								<div class="additionally__wrapper additionally__wrapper--pb">
+									<label for="depth">Укажите глубину в м.</label>
+									<input type="number" min="0" step="0.1" value="" placeholder="Глубина" id="depth">
+								</div>
+								<div class="additionally__wrapper">
+									<label for="">Выберите подоконник</label>
+									<div class="dropdown">
+										<button class="dropdown__button">подоконник</button>
+										<ul class="dropdown__list">
+											<li class="dropdown__list-item" data-value="dub">
+												Эконом
+											</li>
+											<li class="dropdown__list-item" data-value="lessons">
+												Стандарт
+											</li>
+											<li class="dropdown__list-item" data-value="photo">
+												Премиум
+											</li>
+										</ul>
+										<input type="text" name="select-category" value="" class="dropdown__input-hidden">
+									</div>
+								</div>
+							</div>
+							<div class="additionally__col">
+								<p class="additionally__title">Откосы</p>
+								<div class="additionally__wrapper additionally__wrapper--pb">
+									<label for="depth">Укажите глубину в м.</label>
+									<input type="number" min="0" step="0.1" value="" placeholder="Глубина" id="depth">
+								</div>
+							</div>
+							<div class="additionally__col">
+								<p class="additionally__title">Отлив</p>
+								<div class="additionally__wrapper additionally__wrapper--pb">
+									<label for="depth">Укажите глубину в м.</label>
+									<input type="number" min="0" step="0.1" value="" placeholder="Глубина" id="depth">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="calculate__card card-calculate">
+						<div class="card-calculate__top">
+							<h4 class="card-calculate__title">
+								Окна добавленые к расчету
+							</h4>
+						</div>
+						<div class="card-calculate__window calculation">
 
 						</div>
 					</div>
@@ -607,9 +677,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ&_v=20230502175456>"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20230502175456"></script>
-	<script src="js/app.min.js?_v=20230502175456"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ&_v=20230503175728>"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20230503175728"></script>
+	<script src="js/app.min.js?_v=20230503175728"></script>
 </body>
 
 </html>
