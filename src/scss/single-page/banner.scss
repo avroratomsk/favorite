@@ -14,7 +14,15 @@
 
     // .single-banner__col
 
-    &__col {}
+    &__col {
+        &:last-child {
+            @media screen and (min-width: 768px) {
+                margin-left: 20px;
+            }
+
+            // flex: 1 1 auto;
+        }
+    }
 
     // .single-banner__title
 
@@ -23,6 +31,7 @@
         font-size: 32px;
         line-height: 120%;
         margin-bottom: 18px;
+        max-width: 670px;
 
 
         span {
@@ -45,10 +54,14 @@
     // .single-banner__image
 
     &__image {
+        display: block;
         animation: window 3s infinite;
+        max-height: 500px;
+        max-width: 500px;
 
         img {
             max-width: 100%;
+            height: auto;
         }
     }
 

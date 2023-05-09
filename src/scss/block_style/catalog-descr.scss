@@ -7,7 +7,11 @@
 
     // .catalog-descr__body
 
-    &__body {}
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 80px;
+    }
 
     // .catalog-descr__title
 
@@ -24,5 +28,94 @@
         font-size: 16px;
         line-height: 150%;
         color: #1B1B1B;
+    }
+
+    // .catalog-descr__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .catalog-descr__wrapper
+
+    &__wrapper {
+        display: flex;
+    }
+
+    // .catalog-descr__name
+
+    &__name {
+        writing-mode: vertical-lr;
+        font-weight: 700;
+        font-size: 18px;
+        max-width: 700px;
+        color: $white;
+        background-color: $accent;
+        padding: 5px;
+        margin-right: 20px;
+        letter-spacing: .3em;
+    }
+
+    // .catalog-descr__list
+
+    &__list {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+
+        li {
+            font-size: 15px;
+            font-weight: 500;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    // .catalog-descr__sphera
+
+    &__sphera {
+        margin-top: 30px;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        h4 {
+            font-size: 20px;
+            color: $accent;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+
+    // .catalog-descr__sphera--text
+
+    &__sphera--text {
+        font-size: 18px;
+        line-height: 150%;
+
+        @media screen and (min-width: 769px) {
+            max-width: 1000px;
+        }
+    }
+
+    // .catalog-descr__company
+    &__company {
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: 140%;
+
+        span {
+            font-weight: 600;
+            color: $accent;
+        }
     }
 }
