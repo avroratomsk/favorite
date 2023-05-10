@@ -19,6 +19,67 @@
         margin-bottom: 40px;
 
     }
+
+    // .calculate__btn
+    &__btn {
+        background-color: $accent;
+        color: $white;
+        margin-bottom: 30px;
+    }
+
+
+
+    // .calculate__text
+
+    &__text {
+        margin-bottom: 20px;
+        line-height: 140%;
+        font-weight: 500;
+    }
+
+    // .calculate__list--title
+
+    &__list--title {
+        margin-bottom: 20px;
+        line-height: 120%;
+    }
+
+    // .calculate__title--text
+
+    &__title--text {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    // .calculate__list
+
+    &__list {
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 27px;
+            line-height: 120%;
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                margin-top: -2px;
+                display: block;
+                width: 20px;
+                height: 4px;
+                background-color: $accent;
+            }
+        }
+    }
+
+
+
 }
 
 .card-calculate {
@@ -85,7 +146,7 @@
             &:checked~label {
 
                 svg {
-                    fill: $accent  !important;
+                    fill: $accent !important;
                 }
 
                 p {
@@ -677,4 +738,57 @@
         &__input-hidden {}
     }
 
+}
+
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+    // .services__item
+
+    &__item {
+        input[type="text"] {
+            width: 100%;
+            border: 1px solid rgba($color: $mainColor, $alpha: .3);
+            height: 35px;
+            padding: 0px 5px;
+            margin-bottom: 20px;
+            outline: none;
+
+            &:focus {
+                border-color: rgba($color: $mainColor, $alpha: .7);
+            }
+        }
+    }
+
+    // .services__title
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    // .services__subtitle
+
+    &__subtitle {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    // .services__input
+
+    &__input {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            margin-bottom: 0px;
+        }
+    }
 }
