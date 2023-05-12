@@ -124,20 +124,33 @@
                                     <div class="dropdown">
                                         <button class="dropdown__button">Выберите цвет</button>
                                         <ul class="dropdown__list">
-                                            <li class="dropdown__list-item" data-value="1">
+                                            <li class="dropdown__list-item" data-value="1" data-date="Рустикальный дуб">
                                                 Рустикальный дуб
                                             </li>
-                                            <li class="dropdown__list-item" data-value="2">
+                                            <li class="dropdown__list-item" data-value="2" data-date="Махагон">
                                                 Махагон
                                             </li>
-                                            <li class="dropdown__list-item" data-value="3">
+                                            <li class="dropdown__list-item" data-value="3" data-date="Натуральный дуб">
                                                 Натуральный дуб
                                             </li>
-                                            <li class="dropdown__list-item" data-value="4">
+                                            <li class="dropdown__list-item" data-value="4" data-date="Светлый дуб">
                                                 Светлый дуб
                                             </li>
-                                            <li class="dropdown__list-item" data-value="5">
+                                            <li class="dropdown__list-item" data-value="5" data-date="Серый">
                                                 Серый
+                                            </li>
+                                            <li class="dropdown__list-item" data-value="6" data-date="Атрацитово-Серый">
+                                                Атрацитово-Серый
+                                            </li>
+                                            <li class="dropdown__list-item" data-value="7"
+                                                data-date="Коричневый шоколад">
+                                                Коричневый шоколад
+                                            </li>
+                                            <li class="dropdown__list-item" data-value="8" data-date="Темный дуб">
+                                                Темный дуб
+                                            </li>
+                                            <li class="dropdown__list-item" data-value="9" data-date="Золотой дуб">
+                                                Золотой дуб
                                             </li>
                                         </ul>
                                         <input type="text" name="select-category" value=""
@@ -160,35 +173,41 @@
                         <div class="card-calculate__window window" data-color="0">
                             <div class="window__item w1 active stvorki" data-window="1">
                                 <div class="window__wrapper">
-                                    <div class="window__bg">
+                                    <div class="window__bg" style="background-image: url(../img/window/strokes.1.png);">
                                     </div>
                                     <div class="window__stvorki">
-                                        <div class="window__stvorki--one"></div>
+                                        <div class="window__stvorki--one"
+                                            style="background-image: url(../img/window/win_left.jpg);"></div>
                                     </div>
                                 </div>
                                 <div class="window__number">Одна створка</div>
                             </div>
 
-                            <div class="window__item w2 stvorki" data-window="2">
+                            <div class="window__item w2 active stvorki" data-window="2">
                                 <div class="window__wrapper">
-                                    <div class="window__bg">
+                                    <div class="window__bg" style="background-image: url(../img/window/strokes.2.png);">
                                     </div>
                                     <div class="window__stvorki">
-                                        <div class="window__stvorki--one"></div>
-                                        <div class="window__stvorki--two"></div>
+                                        <div class="window__stvorki--one"
+                                            style="background-image: url(../img/window/win_left.jpg);"></div>
+                                        <div class="window__stvorki--two"
+                                            style="background-image: url(../img/window/win_middle.jpg);"></div>
                                     </div>
                                 </div>
                                 <div class="window__number">Две створки</div>
                             </div>
 
-                            <div class="window__item w3 stvorki" data-window="3">
+                            <div class="window__item w3 active stvorki" data-window="3">
                                 <div class="window__wrapper">
-                                    <div class="window__bg">
+                                    <div class="window__bg" style="background-image: url(../img/window/strokes.3.png);">
                                     </div>
                                     <div class="window__stvorki">
-                                        <div class="window__stvorki--one"></div>
-                                        <div class="window__stvorki--two"></div>
-                                        <div class="window__stvorki--three"></div>
+                                        <div class="window__stvorki--one"
+                                            style="background-image: url(../img/window/win_left.jpg);"></div>
+                                        <div class="window__stvorki--two"
+                                            style="background-image: url(../img/window/win_middle.jpg);"></div>
+                                        <div class="window__stvorki--three"
+                                            style="background-image: url(../img/window/win_right.jpg);"></div>
                                     </div>
                                 </div>
                                 <div class="window__number">Три створки</div>
@@ -202,151 +221,145 @@
                                 <span>Шаг 5.</span> Укажите размеры окна
                             </h4>
                         </div>
-                        <div class="card-calculate__window size" data-color="1">
+                        <div class="card-calculate__window size" data-color="0">
                             <div class="size__left">
-                                <div class="size__window" data-id="1"></div>
+                                <div class="size__window" data-id="1"
+                                    style="background-image: url(../img/window/win1.svg);"></div>
                             </div>
-                            <div class="size__right right-size">
-                                <div class="right-size__body">
-                                    <div class="right-size__range range">
-                                        <div class="range__top">
-                                            <p class="value">750</p>
-                                            <p class="range__name">Ширина</p>
+                            <div class="size__right">
+                                <div class="size__row">
+                                    <div class="range-size">
+                                        <div class="range-size__top">
+                                            <p>Ширина</p>
+                                            <input type="number" value="1250" class="range-value">
                                         </div>
-                                        <input type="range" min="100" max="2500" value="750" class="range-width">
-                                    </div>
-                                    <div class="right-size__range range">
-                                        <div class="range__top">
-                                            <p class="value">750</p>
-                                            <p class="range__name">Высота</p>
-                                        </div>
-                                        <input type="range" min="100" max="1500" value="750" class="range-height">
-                                    </div>
-                                    <div class="right-size__input">
-                                        <input type="checkbox" name="podok" value="" id="podok"
-                                            class="right-size__checkbox">
-                                        <label for="podok">Подоконник</label>
-                                    </div>
-                                    <div class="right-size__input">
-                                        <div class="right-size__input--wrapper">
-                                            <input type="checkbox" name="otkosy" value="" id="otkosy"
-                                                class="right-size__checkbox">
-                                            <label for="otkosy">Откосы</label>
-                                        </div>
-                                        <div class="right-size__radio">
-                                            <div class="right-size__radio--wrapper">
-                                                <input type="radio" name="otkosy" value="ПВХ" id="pvh">
-                                                <label for="pvh">ПВХ</label>
-                                            </div>
-                                            <div class="right-size__radio--wrapper">
-                                                <input type="radio" name="otkosy" value="ПВХ" id="shtukat">
-                                                <label for="shtukat">Штукатурные</label>
-                                            </div>
+                                        <div class="range-size__wrapper">
+                                            <input type="range" min="100" max="2500" value="1250"
+                                                class="range-size__input">
                                         </div>
                                     </div>
-                                    <div class="right-size__input">
-                                        <div class="right-size__input--wrapper">
-                                            <input type="checkbox" name="podok" value="" id="otliv"
-                                                class="right-size__checkbox">
-                                            <label for="otliv">Отлив</label>
+
+                                    <div class="range-size">
+                                        <div class="range-size__top">
+                                            <p>Высота</p>
+                                            <input type="number" value="1250" class="range-value">
                                         </div>
+                                        <input type="range" min="100" max="2500" value="1250" class="range-size__input">
+                                    </div>
+                                </div>
+
+
+                                <div class="accessories-size">
+                                    <p class="accessories-size__title">Дополнения</p>
+                                    <div class="accessories-size__input">
+                                        <input type="checkbox" id="windowsill" value="Подоконник" class="input_checkbox"
+                                            checked>
+                                        <label for="windowsill" class="input_label">Подоконник</label>
+                                    </div>
+                                    <div class="accessories-size__input">
+                                        <input type="checkbox" id="slopes" value="Откосы" class="input_checkbox"
+                                            checked>
+                                        <label for="slopes" class="input_label">Откосы</label>
+                                    </div>
+                                    <div class="accessories-size__input _ml-input">
+                                        <input type="radio" id="pvc" name="type_windowsill" value="ПВХ"
+                                            class="input_radio" checked>
+                                        <label for="pvc" class="input_label">ПВХ</label>
+                                    </div>
+                                    <div class="accessories-size__input _ml-input">
+                                        <input type="radio" id="plaster" name="type_windowsill" value="Штукатурные"
+                                            class="input_radio">
+                                        <label for="plaster" class="input_label">Штукатурные</label>
+                                    </div>
+                                    <div class="accessories-size__input">
+                                        <input type="checkbox" id="sill_tide" value="Отлив" class="input_checkbox"
+                                            checked>
+                                        <label for="sill_tide" class="input_label">Отлив</label>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
-                    <div class="calculate__card card-calculate">
+                    <div class="calculate__card card-calculate opening">
                         <div class="card-calculate__top">
                             <h4 class="card-calculate__title">
                                 <span>Шаг 6.</span> Выберите тип открытия створки
                             </h4>
                         </div>
-                        <div class="card-calculate__window opening">
-                            <div class="opening__body">
-                                <div class="opening__left left-opening">
-                                    <div class="card-calculate__window window" data-color="1" data-active="1">
-                                        <div class="window__item w1">
-                                            <div class="window__wrapper">
-                                                <div class="window__bg">
-                                                </div>
-                                                <div class="window__stvorki" data-stvorky="deaf">
-                                                    <div class="window__stvorki--one">
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <div class="opening__body">
+                            <div class="opening__variant">
+                                <div class="opening__one variant active">
+                                    Вариант октрытия 1 створки
+                                </div>
+                                <div class="opening__two variant">
+                                    Вариант октрытия 2 створки
+                                </div>
+                                <div class="opening__three variant">
+                                    Вариант окрытия 3 створки
+                                </div>
+                            </div>
+                            <div class="card-calculate__window window" data-color="0">
+                                <div class="window__item w1" data-window="3">
+                                    <div class="window__wrapper">
+                                        <div class="window__bg"
+                                            style="background-image: url(../img/window/strokes.1.png);">
                                         </div>
-                                        <div class="window__item w2">
-                                            <div class="window__wrapper">
-                                                <div class="window__bg">
-                                                </div>
-                                                <div class="window__stvorki" data-stvorky="povorotnaya">
-                                                    <div class="window__stvorki--one">
-                                                    </div>
-                                                    <div class="window__stvorki--two"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="window__item w3">
-                                            <div class="window__wrapper">
-                                                <div class="window__bg">
-                                                </div>
-                                                <div class="window__stvorki" data-stvorky="povorotno-otkidnaya">
-                                                    <div class="window__stvorki--one">
-                                                    </div>
-                                                    <div class="window__stvorki--two"></div>
-                                                    <div class="window__stvorki--three"></div>
-                                                </div>
-                                            </div>
+                                        <div class="window__stvorki">
+                                            <div class="window__stvorki--one" data-type="deaf"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="opening__right">
-                                    <div class="radio">
-                                        <div class="radio__wrapper">
-                                            <input type="radio" name="number-leaves" id="deaf" class="radio__input">
-                                            <label for="deaf" class="radio__label">Глухая</label>
+                            </div>
+                            <div class="opening__type">
+                                <p class="opening__stvorka">Левая створка</p>
+                                <div class="opening__line">
+                                    <div class="opening__input">
+                                        <input type="radio" id="gluh" value="Глухая" class="input_radio" name="option"
+                                            checked>
+                                        <label for="gluh" class="input_label">Глухая</label>
+                                    </div>
+                                </div>
+                                <div class="opening__line">
+                                    <input type="radio" id="povorotnaya" value="Поворотная" name="option"
+                                        class="opening__input--option">
+                                    <label for="povorotnaya" class="opening__label">
+                                        <span>Поворотная</span>
+                                    </label>
+
+                                    <div class="opening__option">
+                                        <p class="opening__option--title">Дополнительные опции</p>
+                                        <div class="opening__input">
+                                            <input type="radio" id="moskit-1" value="Москитная сетка"
+                                                class="input_checkbox">
+                                            <label for="moskit-1" class="input_label">Москитная сетка</label>
+                                        </div>
+                                        <div class="opening__input">
+                                            <input type="radio" id="zamok-1" value="Детский замок"
+                                                class="input_checkbox">
+                                            <label for="zamok-1" class="input_label">Детский замок</label>
                                         </div>
                                     </div>
-                                    <div class="radio">
-                                        <div class="radio__wrapper">
-                                            <input type="radio" name="number-leaves" id="rotary" class="radio__input">
-                                            <label for="rotary" class="radio__label">Поворотная</label>
+                                </div>
+                                <div class="opening__line">
+                                    <input type="radio" id="povorotno-otkidnaya" value="Поворотно-откидная"
+                                        name="option" class="opening__input--option">
+                                    <label for="povorotno-otkidnaya" class="opening__label">
+                                        <span>Поворотно-откидная</span>
+                                    </label>
+
+                                    <div class="opening__option">
+                                        <p class="opening__option--title">Дополнительные опции</p>
+                                        <div class="opening__input">
+                                            <input type="radio" id="moskit-2" value="Москитная сетка"
+                                                class="input_checkbox">
+                                            <label for="moskit-2" class="input_label">Москитная сетка</label>
                                         </div>
-                                        <div class="radio__option">
-                                            <p class="radio__title">Дополнительные опции:</p>
-                                            <div class="checkbox">
-                                                <div class="checkbox__wrapper">
-                                                    <input type="checkbox" id="mosquito-net-1" name="mosquito-net-1">
-                                                    <label for="mosquito-net-1">Москитная сетка</label>
-                                                </div>
-                                                <div class="checkbox__wrapper">
-                                                    <input type="checkbox" id="children-castle-1"
-                                                        name="children-castle-1">
-                                                    <label for="children-castle-1">Детский замок</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="radio">
-                                        <div class="radio__wrapper">
-                                            <input type="radio" name="number-leaves" id="tilt-turn"
-                                                class="radio__input">
-                                            <label for="tilt-turn" class="radio__label">Поворотно-откидная</label>
-                                        </div>
-                                        <div class="radio__option">
-                                            <p class="radio__title">Дополнительные опции:</p>
-                                            <div class="checkbox">
-                                                <div class="checkbox__wrapper">
-                                                    <input type="checkbox" id="mosquito-net-2" name="mosquito-net-2">
-                                                    <label for="mosquito-net-2">Москитная сетка</label>
-                                                </div>
-                                                <div class="checkbox__wrapper">
-                                                    <input type="checkbox" id="children-castle-2"
-                                                        name="children-castle-2">
-                                                    <label for="children-castle-2">Детский замок</label>
-                                                </div>
-                                            </div>
+                                        <div class="opening__input">
+                                            <input type="radio" id="zamok-2" value="Детский замок"
+                                                class="input_checkbox">
+                                            <label for="zamok-2" class="input_label">Детский замок</label>
                                         </div>
                                     </div>
                                 </div>
@@ -372,13 +385,13 @@
                                     <div class="dropdown">
                                         <button class="dropdown__button">подоконник</button>
                                         <ul class="dropdown__list">
-                                            <li class="dropdown__list-item" data-value="dub">
+                                            <li class="dropdown__list-item" data-date="dub">
                                                 Эконом
                                             </li>
-                                            <li class="dropdown__list-item" data-value="lessons">
+                                            <li class="dropdown__list-item" data-date="lessons">
                                                 Стандарт
                                             </li>
-                                            <li class="dropdown__list-item" data-value="photo">
+                                            <li class="dropdown__list-item" data-date="photo">
                                                 Премиум
                                             </li>
                                         </ul>

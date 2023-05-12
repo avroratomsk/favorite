@@ -176,10 +176,13 @@ body {
 @import "stock-page/blog";
 @import "single-page/banner";
 @import "contact-page/style";
+// Страница калькулятора
 @import "calculate-page/calculate";
 @import "calculate-page/calculate-logic";
 @import "calculate-page/step-four";
-@import "calculate-page/opening_type";
+@import "calculate-page/step-five";
+@import "calculate-page/step-six";
+@import "calculate-page/step-seven";
 
 // Подключение стилей отдельных страниц
 @import "home";

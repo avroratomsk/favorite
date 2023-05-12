@@ -265,482 +265,6 @@
 }
 
 
-
-
-.size {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    max-width: 640px;
-    margin: auto;
-
-    // .size__left
-
-    &__left {
-        width: 250px;
-        height: 250px;
-
-        @media screen and (min-width: 769px) {
-            margin-right: 10px;
-        }
-    }
-
-    // .size__window
-
-    &__window {
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    // .size__right
-
-    &__right {
-        flex: 1 1 auto;
-    }
-}
-
-.right-size {
-
-    // .right-size__body
-
-    &__body {}
-
-    // .right-size__range
-
-    &__range {}
-
-    // .right-size__input
-
-    &__input {
-        margin-bottom: 10px;
-
-        label {
-            font-size: 14px;
-            color: $mainColor;
-        }
-
-        input {
-            cursor: pointer;
-        }
-    }
-
-    // .right-size__checkbox
-
-    &__checkbox {
-        appearance: none;
-        width: 15px;
-        height: 15px;
-        border: 1px solid rgba($color: $mainColor, $alpha: .5);
-        margin-right: 10px;
-        position: relative;
-        cursor: pointer;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 7px;
-            height: 7px;
-            margin-top: -3.5px;
-            margin-left: -3.5px;
-            background-color: $accent;
-            transform: scale(0);
-            transition: $speed_animation;
-        }
-
-        &:checked {
-            border-color: $accent;
-
-            &::before {
-                transform: scale(1);
-            }
-        }
-    }
-
-    // .right-size__input--wrapper
-
-    &__input--wrapper {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-
-        label {
-            cursor: pointer;
-        }
-    }
-
-    // .right-size__radio
-
-    &__radio {}
-
-    // .right-size__radio--wrapper
-
-    &__radio--wrapper {
-        margin-bottom: 10px;
-        margin-left: 20px;
-        display: flex;
-
-        input {
-            position: relative;
-            appearance: none;
-            width: 15px;
-            height: 15px;
-            border: 1px solid rgba($color: $mainColor, $alpha: .5);
-            border-radius: 50%;
-            margin-right: 10px;
-            cursor: pointer;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 7px;
-                height: 7px;
-                margin-top: -3.5px;
-                margin-left: -3.5px;
-                background-color: $accent;
-                border-radius: 50%;
-                transform: scale(0);
-                transition: $speed_animation;
-            }
-
-            &:checked {
-                border-color: $accent;
-
-                &::before {
-                    transform: scale(1);
-                }
-            }
-        }
-
-        label {
-            font-size: 12px;
-            cursor: pointer;
-        }
-    }
-}
-
-.range {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-
-    input[type=range] {
-        width: 100%;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        outline: none;
-        overflow: hidden;
-        height: 6px;
-        border-radius: 5px;
-    }
-
-    input[type=range]::-webkit-slider-runnable-track {
-        height: 7px;
-        background-color: rgba($color: $mainColor, $alpha: .2);
-    }
-
-    input[type=range]::-webkit-slider-thumb {
-        background: #ecf0f1;
-        cursor: pointer;
-        width: 15px;
-        height: 15px;
-        -webkit-appearance: none;
-        margin-top: -4px;
-        box-shadow: -200px 0 0 200px $accent;
-        border-radius: 5px;
-
-    }
-
-    input[type=range]::-moz-range-track {
-        height: 7px;
-        background-color: rgba($color: $mainColor, $alpha: .3);
-    }
-
-
-    input[type=range]::-moz-range-thumb {
-        background: #ecf0f1;
-        cursor: pointer;
-        height: 7px;
-        border-radius: 0px;
-        box-shadow: -200px 0px 0px 200px $accent;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    // .range__top
-
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 5px;
-
-        input[type="number"] {
-            text-align: center;
-            outline: none;
-            width: 50px;
-            border: 1px solid rgba($color: $mainColor, $alpha: .3);
-            color: rgba($color: $mainColor, $alpha: .8);
-        }
-
-        /* Chrome, Safari, Edge, Opera */
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        /* Firefox */
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
-    }
-
-    // .range__name
-
-    &__name {
-        color: rgba($color: $mainColor, $alpha: .5);
-    }
-
-    // .range__value
-    &__value {}
-}
-
-.range-width,
-.range-height {
-    width: 100%;
-}
-
-.range-height {}
-
-
-.range {}
-
-.card-calculate {
-
-    // .card-calculate__window
-
-    &__window {}
-}
-
-.opening {
-
-    // .opening__body
-
-    &__body {
-        display: flex;
-        justify-content: space-between;
-        max-width: 550px;
-        margin: auto;
-    }
-
-    // .opening__left
-
-    &__left {
-        margin-right: 50px;
-    }
-
-    // .opening__right
-
-    &__right {}
-}
-
-
-.radio {
-    width: 100%;
-
-    // .radio__wrapper
-
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-
-    }
-
-    // .radio__label
-
-    &__label {
-        font-size: 14px;
-        cursor: pointer;
-    }
-
-    // .radio__input
-
-    &__input {
-        appearance: none;
-        width: 15px;
-        height: 15px;
-        border: 1px solid rgba($color: $mainColor, $alpha: .6);
-        border-radius: 50px;
-        position: relative;
-        margin-right: 10px;
-        cursor: pointer;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 7px;
-            height: 7px;
-            margin-top: -3.5px;
-            margin-left: -3.5px;
-            background-color: $accent;
-            border-radius: 50%;
-            transition: $speed_animation;
-            transform: scale(0);
-        }
-
-        &:checked::before {
-            transform: scale(1);
-        }
-    }
-
-    // .radio__option
-    &__option {
-        margin-left: 30px;
-        margin-top: 20px;
-        display: none;
-    }
-
-    // .radio__title
-
-    &__title {
-        font-size: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-.checkbox {
-
-    // .checkbox__wrapper
-
-    &__wrapper {
-        margin-bottom: 10px;
-
-        input {
-            appearance: none;
-            width: 15px;
-            height: 15px;
-            border: 1px solid rgba($color: $mainColor, $alpha: .6);
-            position: relative;
-            margin-right: 10px;
-            cursor: pointer;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 7px;
-                height: 7px;
-                margin-top: -3.5px;
-                margin-left: -3.5px;
-                background-color: $accent;
-                transition: $speed_animation;
-                transform: scale(0);
-            }
-
-            &:checked::before {
-                transform: scale(1);
-
-            }
-        }
-
-        label {
-            font-size: 13px;
-            cursor: pointer;
-        }
-    }
-}
-
-
-.additionally {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 20px;
-
-    // .additionally__col
-
-    &__col {}
-
-    // .additionally__title
-
-    &__title {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    // .additionally__wrapper--pb
-    &__wrapper--pb {
-        margin-bottom: 20px;
-    }
-
-    // .additionally__wrapper
-
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-
-        label {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        input {
-            border: 1px solid rgba($color: $mainColor, $alpha: .6);
-            height: 40px;
-            padding: 0px 10px;
-            outline: none;
-            appearance: none;
-
-            &::placeholder {
-                font-size: 14px;
-            }
-
-            /* Chrome, Safari, Edge, Opera */
-            input::-webkit-outer-spin-button,
-            input::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-            }
-
-            /* Firefox */
-            input[type=number] {
-                -moz-appearance: textfield;
-            }
-        }
-    }
-
-    .dropdown {
-
-        // .dropdown__button
-
-        &__button {}
-
-        // .dropdown__list
-
-        &__list {}
-
-        // .dropdown__list-item
-
-        &__list-item {}
-
-        // .dropdown__input-hidden
-
-        &__input-hidden {}
-    }
-
-}
-
-
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -791,4 +315,82 @@
             margin-bottom: 0px;
         }
     }
+}
+
+// Общие стили input
+
+.input_checkbox {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgba($color: $mainColor, $alpha: .7);
+    margin-right: 5px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px;
+        height: 6px;
+        margin-top: -3px;
+        margin-left: -3px;
+        background-color: $accent;
+        transform: scale(0);
+        transition: $speed_animation;
+    }
+
+    &:checked {
+        border-color: $accent;
+
+        &::before {
+            transform: scale(1);
+        }
+    }
+}
+
+.input_radio {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgba($color: $mainColor, $alpha: .7);
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px;
+        height: 6px;
+        margin-top: -3px;
+        margin-left: -3px;
+        background-color: $accent;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: $speed_animation;
+    }
+
+    &:checked {
+        border-color: $accent;
+
+        &::before {
+            transform: scale(1);
+        }
+    }
+}
+
+.input_label {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+// ._ml-input
+._ml-input {
+    margin-left: 20px;
 }

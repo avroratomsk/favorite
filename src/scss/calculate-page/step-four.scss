@@ -35,6 +35,17 @@
         &:hover::before {
             background-color: lightblue;
         }
+
+        & [data-type] {
+
+            .window__stvorki--one {
+                width: 100%;
+                height: 100%;
+                background-size: contain;
+            }
+
+            background-color: lightblue;
+        }
     }
 
     // .window__bg
@@ -68,6 +79,7 @@
         width: 100%;
         height: 100%;
         display: block;
+        position: relative;
     }
 
     // .window__number

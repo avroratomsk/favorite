@@ -1,16 +1,16 @@
 /* *******************
 Select c dropdown на JS
 ******************* */
-.form-group {
-    // opacity: 0;
-    // pointer-events: none;
-    transition: $speed_animation;
+// .form-group {
+//     // opacity: 0;
+//     // pointer-events: none;
+//     transition: $speed_animation;
 
-    &:before {
-        content: '';
-        color: red;
-    }
-}
+//     &:before {
+//         content: '';
+//         color: red;
+//     }
+// }
 
 .form-group.active-select {
     opacity: 1;
@@ -30,7 +30,8 @@ Select c dropdown на JS
     text-align: left;
 
     background: #FFFFFF;
-    border: 1px solid $mainColor;
+    border: 1px solid rgba($color: $mainColor, $alpha: .3);
+    color: rgba($color: $mainColor, $alpha: .9);
     // height: 36px;
 
     padding-top: 10px;
@@ -48,7 +49,7 @@ Select c dropdown на JS
 .dropdown__button:focus,
 .dropdown__button--active {
     // outline: none;
-    // background: rgba(176, 198, 225, 0.2);
+    background: rgba(176, 198, 225, 0.2);
 }
 
 .dropdown__button::after {
@@ -80,14 +81,14 @@ Select c dropdown на JS
     margin: 0;
     padding: 0;
     list-style-type: none;
-    border: 1px solid $mainColor;
+    border: 1px solid rgba($color: $mainColor, $alpha: .3);
     border-top: 0px;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba($mainColor, 0.6);
     overflow: hidden;
     width: 100%;
 
-    z-index: 1;
+    z-index: 20;
 }
 
 .dropdown__list--visible {
@@ -97,13 +98,14 @@ Select c dropdown на JS
 .dropdown__list-item {
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid $mainColor;
+    border-bottom: 1px solid rgba($color: $mainColor, $alpha: .3);
     border-bottom: 0px;
+    color: rgba($color: $mainColor, $alpha: .9);
     padding: 10px 20px;
     cursor: pointer;
 
     &:not(:last-child) {
-        border-bottom: 1px solid $mainColor;
+        border-bottom: 1px solid rgba($color: $mainColor, $alpha: .3);
     }
 }
 
@@ -113,7 +115,7 @@ Select c dropdown на JS
 
 .dropdown__list-item:last-child {
     // border-radius: 0 0 6px 6px;
-    border-bottom: 1px solid #7E9BBD;
+    border-bottom: 1px solid rgba($color: $mainColor, $alpha: .3)
 }
 
 .dropdown__list-item:hover {
