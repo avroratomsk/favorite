@@ -1,6 +1,10 @@
 .catalog-descr {
     padding: 0px 0px 100px;
 
+    @media screen and (max-width: 700px) {
+        padding: 0px 0px 40px;
+    }
+
     // .catalog-descr__container
 
     &__container {}
@@ -11,14 +15,19 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         gap: 80px;
+
+        @media screen and (max-width: 550px) {
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 20px;
+        }
     }
 
     // .catalog-descr__title
 
     &__title {
-        font-size: 40px;
+        font-size: 25px;
         color: #000000;
-        margin-bottom: 29px;
+        margin: 30px 0px 20px;
     }
 
     // .catalog-descr__text
@@ -35,10 +44,9 @@
     &__item {
         display: flex;
         flex-direction: column;
-        height: 100%;
 
         &:not(:last-child) {
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
         }
     }
 
@@ -46,6 +54,7 @@
 
     &__wrapper {
         display: flex;
+        height: 100%;
     }
 
     // .catalog-descr__name
@@ -54,13 +63,12 @@
         writing-mode: vertical-lr;
         font-weight: 700;
         font-size: 18px;
-        max-width: 700px;
         margin-right: 20px;
         letter-spacing: .3em;
 
         span {
             padding: 5px;
-            display: inline;
+            display: flex;
             background-color: $accent;
             -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
@@ -71,13 +79,12 @@
     // .catalog-descr__list
 
     &__list {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
+        margin-bottom: 10px;
 
         li {
             font-size: 15px;
             font-weight: 500;
+            line-height: 140%;
 
             &:not(:last-child) {
                 margin-bottom: 10px;
@@ -88,9 +95,7 @@
     // .catalog-descr__sphera
 
     &__sphera {
-        margin-top: 30px;
         flex: 1 1 auto;
-        // border: 1px solid #000;
 
         h4 {
             font-size: 20px;
@@ -103,7 +108,7 @@
     // .catalog-descr__sphera--text
 
     &__sphera--text {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 150%;
 
         @media screen and (min-width: 769px) {
@@ -113,7 +118,7 @@
 
     // .catalog-descr__company
     &__company {
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 18px;
         line-height: 140%;
 
@@ -122,4 +127,61 @@
             color: $accent;
         }
     }
+
+    // .catalog-descr__info
+    &__info {
+        width: 100%;
+
+        p {
+            margin-bottom: 10px;
+            line-height: 140%;
+        }
+    }
+
+    .spollers__item {
+        max-width: 400px;
+    }
+
+    .spollers__title {
+        font-size: 14px;
+        width: 100%;
+
+        &::before,
+        &::after {
+            width: 9px;
+            background-color: $accent;
+        }
+    }
+
+    .spollers__body {}
+
+    // .catalog-descr__choice
+
+    &__choice {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            padding: 10px 20px;
+            border: 1px solid $accent;
+            color: $accent;
+            font-weight: 700;
+            // transition: $speed_animation;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            &:hover {
+                background-color: $accent;
+                color: $white;
+            }
+        }
+    }
+
 }

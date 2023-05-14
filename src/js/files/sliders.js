@@ -27,6 +27,28 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
+	if (document.querySelector('.single-banner__slider')) {
+		new Swiper('.single-banner__slider', {
+			modules: [Navigation, Pagination, Autoplay],
+			observer: true,
+			observeParents: true,
+			autoHeight: true,
+			speed: 800,
+			allowTouchMove: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			loop: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',*/
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+
+		})
+	}
 	if (document.querySelector('.project__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
 		new Swiper('.project__slider', { // Указываем скласс нужного слайдера
@@ -35,7 +57,7 @@ function initSliders() {
 			modules: [Navigation],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 3,
+			slidesPerView: 2,
 			spaceBetween: 20,
 			autoHeight: true,
 			speed: 800,
@@ -305,6 +327,7 @@ function initSliders() {
 			},
 		});
 	}
+
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

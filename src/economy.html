@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="single">
+
+            <div class="single-banner">
+                <div class="single-banner__container">
+                    <div class="single-banner__body">
+                        <div class="single-banner__col">
+                            <h2 class="single-banner__title _title" data-aos="fade-up">
+                                <span>Окна эконом класса</span><br>
+                                производятся из ПВХ профилей
+                                Nordprof 58 и Bulava 58 компании «Грайн»
+                            </h2>
+                            <p class="single-banner__subtitle" data-aos="fade-up" data-aos-delay="150">
+                                Добросовестное отношение на всех этапах<br> работы с нашими клиентами.
+                            </p>
+                        </div>
+                        <div class="single-banner__col">
+                            <div class="single-banner__slider swiper">
+                                <div class="single-banner__wrapper swiper-wrapper">
+                                    <div class="single-banner__slide swiper-slide">
+                                        <img src="@img/econom.png" alt="Окно">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="single-banner__image">
+                                <img src="@img/econom.png" alt="Окно">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Начало блока описание карточки-->
+            <div class="catalog-descr">
+                <div class="catalog-descr__container">
+                    <div class="catalog-descr__body">
+                        <div class="catalog-descr__item">
+                            <div class="catalog-descr__wrapper">
+                                <p class="catalog-descr__name"><span>Bulava 58</span></p>
+                                <div class="catalog-descr__info">
+                                    <ul class="catalog-descr__list">
+                                        <li>Трехкамерный профиль 58 мм класса «В»</li>
+                                        <li>Толщина наружной стенки 2,5 мм.</li>
+                                        <li>Толщина внутренних стенок 2 мм.</li>
+                                        <li>Толщина стеклопакета 4 мм, 24 мм, 32 мм.</li>
+                                        <li>Классический контур</li>
+                                    </ul>
+                                    <div data-spollers class="spollers">
+                                        <div class="spollers__item">
+                                            <button type="button" data-spoller class="spollers__title">Сфера
+                                                применения</button>
+                                            <div class="spollers__body">
+                                                <p class="catalog-descr__sphera--text">
+                                                    Профильная система Bulava 58 предназначена для остекления балконов,
+                                                    лоджий,
+                                                    подъездов,
+                                                    внутриофисных
+                                                    огородительных конструкций, остекления офисных, промышленных и иных
+                                                    помещений
+                                                    эконом-класса
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-descr__item">
+                            <div class="catalog-descr__wrapper">
+                                <p class="catalog-descr__name"><span>Nordprof 58</span></p>
+                                <div class="catalog-descr__info">
+                                    <ul class="catalog-descr__list">
+                                        <li>Трехкамерные профили шириной 58 мм</li>
+                                        <li>Толщина наружной профильной стенки 2,5 мм</li>
+                                        <li>Толщина внутренних стенок 2 мм</li>
+                                        <li>Толщина стеклопакета 4 мм, 24 мм, 32 мм.</li>
+                                        <li>Классический контур</li>
+                                    </ul>
+                                    <div data-spollers class="spollers">
+                                        <div class="spollers__item">
+                                            <button type="button" data-spoller class="spollers__title">Сфера
+                                                применения</button>
+                                            <div class="spollers__body">
+                                                <p class="catalog-descr__sphera--text">
+                                                    Профильная система Nordprof 58 предназначена для жилых и офисных
+                                                    помещений, а
+                                                    также для
+                                                    светопрозрачных конструкций в районах с умеренной ветровой
+                                                    нагрузкой, остекления
+                                                    балконов,
+                                                    лоджий, подъездов, внутриофисных огородительных конструкций,
+                                                    остекления офисных,
+                                                    промышленных и
+                                                    иных помещений эконом-класса
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="catalog-descr__company">
+                        Компания <span>«Грайн»</span> — российский производитель поливинилхлоридных профилей для
+                        светопрозрачных
+                        ограждающих
+                        конструкций. Завод расположен в г. Уфа. Современное здание завода отвечает мировым стандартам
+                        экологически
+                        безопасного производства. Инновационные решения, используемые на предприятии, позволяют компании
+                        выпускать
+                        продукцию стабильно высокого качества. На сегодняшний день завод Grain — крупнейший
+                        производитель ПВХ
+                        профилей в ПФО и УФО.
+                    </p>
+                </div>
+            </div>
+            <!-- Конец блока описание карточки -->
+
+            <!-- Начало блока УТП -->
+            @@include('html/includes/_upt.html',{})
+            <!-- Конец блока УТП -->
+
+            <!-- Начало блока банер каталога-->
+            @@include('html/includes/stock-slider.html',{})
+            <!-- Конец блока банер каталога -->
+
+            <!-- Начало блока качества в колонку -->
+            @@include('html/includes/quality-column.html',{})
+            <!-- Конец блока качества в колонку -->
+
+            <!-- Начало блока 5 шагов -->
+            @@include('html/includes/steps.html',{})
+            <!-- Конец блока 5 шагов -->
+
+            <!-- Начало блока бесплатно вызвать замерщика -->
+            @@include('html/includes/free_call.html',{})
+            <!-- Конец блока бесплатно вызвать замерщика -->
+
+        </main>
+
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
