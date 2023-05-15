@@ -62,7 +62,6 @@ flsFunctions.spollers();
 */
 import './libs/popup.js'
 
-
 /*
 Модуль параллакса мышью
 Документация: 

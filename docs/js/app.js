@@ -4038,6 +4038,7 @@
                 dropDownBtn.focus();
                 dropDownInput.value = this.dataset.value;
                 dropDownList.classList.remove("dropdown__list--visible");
+                changeColor(dropDownInput.value);
             }));
         }));
         document.addEventListener("click", (function(e) {
@@ -4065,6 +4066,57 @@
             input.value = value;
         }
     }
+    function changeColor(value) {
+        let dataColorEl = document.querySelectorAll("[data-color]");
+        dataColorEl.forEach((color => {
+            color.dataset.color = value;
+        }));
+    }
+    let radioChangeColor = document.querySelectorAll(".colors");
+    radioChangeColor.forEach((el => {
+        el.addEventListener("change", (function(e) {
+            if (this.checked) {
+                let dataRadioColor = this.dataset.value;
+                changeColor(dataRadioColor);
+                if (dataRadioColor == 1) document.querySelector("#colors").classList.add("active-dropdown"); else document.querySelector("#colors").classList.remove("active-dropdown");
+            }
+        }));
+    }));
+    let windowActive = document.querySelectorAll(".stvorki[data-window]");
+    document.querySelector(".stvorki[data-window]").classList.add("active");
+    windowActive.forEach((sash => {
+        sash.addEventListener("click", (function() {
+            windowActive.forEach((sash => {
+                sash.classList.remove("active");
+            }));
+            this.classList.add("active");
+            let quantitySash = this.dataset.window;
+            let dataIdEl = document.querySelectorAll("[data-id]");
+            dataIdEl.forEach((el => {
+                el.dataset.id = quantitySash;
+            }));
+            let openTypeSash = document.querySelector("[data-open]");
+            openTypeSash.dataset.open = quantitySash;
+            document.querySelectorAll(".variant").forEach((item => {
+                item.classList.remove("hide");
+            }));
+            if (openTypeSash.dataset.open == 1) document.querySelectorAll(".variant").forEach((item => {
+                item.classList.add("hide");
+            }));
+            if (openTypeSash.dataset.open == 2) document.querySelector(".opening__three").classList.add("hide");
+        }));
+    }));
+    let variantSash = document.querySelectorAll(".variant");
+    variantSash.forEach((item => {
+        item.addEventListener("click", (function() {
+            variantSash.forEach((item => {
+                item.classList.remove("active-type");
+            }));
+            this.classList.add("active-type");
+            let dataStvorka = this.dataset.stvorka;
+            if (dataStvorka == 1) document.querySelector(".s1").classList.add(".active-stvorka");
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();

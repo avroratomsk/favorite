@@ -4,56 +4,400 @@
 */
 .window {
 
-    & .w1 .window__wrapper {
-        width: 106px;
-    }
+  & .w1 .window__wrapper {
+    width: 106px;
+  }
 
-    & .w2 .window__wrapper {
-        width: 200px;
-    }
+  & .w2 .window__wrapper {
+    width: 200px;
+  }
 
-    & .w3 .window__wrapper {
-        width: 294px;
-    }
+  & .w3 .window__wrapper {
+    width: 294px;
+  }
 
 }
 
+[data-color="0"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1.svg);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2.svg);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3.svg);
+  }
+}
+
+[data-color="1"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.color_1.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.color_1.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.color_1.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1_color_1.png);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2_color_1.png);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3_color_1.png);
+  }
+
+}
+
+[data-color="2"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.color_2.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.color_2.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.color_2.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1_color_2.png);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2_color_2.png);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3_color_2.png);
+  }
+}
+
+[data-color="3"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.color_3.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.color_3.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.color_3.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1_color_3.png);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2_color_3.png);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3_color_3.png);
+  }
+}
+
+[data-color="4"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.color_4.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.color_4.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.color_4.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1_color_4.png);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2_color_4.png);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3_color_4.png);
+  }
+}
+
+[data-color="5"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.color_5.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.color_5.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.color_5.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1_color_5.png);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2_color_5.png);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3_color_5.png);
+  }
+}
+
+[data-color="6"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.color_6.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.color_6.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.color_6.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1_color_6.png);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2_color_6.png);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3_color_6.png);
+  }
+}
+
+[data-color="7"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.color_7.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.color_7.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.color_7.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1_color_7.png);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2_color_7.png);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3_color_7.png);
+  }
+}
+
+[data-color="8"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.color_8.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.color_8.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.color_8.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1_color_8.png);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2_color_8.png);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3_color_8.png);
+  }
+}
+
+[data-color="9"] {
+  .w1 .window__bg {
+    background-image: url(../img/window/strokes.1.color_9.png);
+  }
+
+  .w2 .window__bg {
+    background-image: url(../img/window/strokes.2.color_9.png);
+  }
+
+  .w3 .window__bg {
+    background-image: url(../img/window/strokes.3.color_9.png);
+  }
+
+  [data-id="1"] {
+    background-image: url(../img/window/win1_color_9.png);
+  }
+
+  [data-id="2"] {
+    background-image: url(../img/window/win2_color_9.png);
+  }
+
+  [data-id="3"] {
+    background-image: url(../img/window/win3_color_9.png);
+  }
+}
+
+
+
+.w1.active {
+  .window__stvorka {
+    &:nth-child(1) {
+      background-image: url(../img/window/win_left.jpg);
+    }
+  }
+}
+
+.w2.active {
+  .window__stvorka {
+    &:nth-child(1) {
+      background-image: url(../img/window/win_left.jpg);
+    }
+
+    &:nth-child(2) {
+      background-image: url(../img/window/win_middle.jpg);
+    }
+  }
+}
+
+.w3.active {
+  .window__stvorka {
+    &:nth-child(1) {
+      background-image: url(../img/window/win_left.jpg);
+    }
+
+    &:nth-child(2) {
+      background-image: url(../img/window/win_middle.jpg);
+    }
+
+    &:nth-child(3) {
+      background-image: url(../img/window/win_right.jpg);
+    }
+  }
+}
+
+[data-open="1"] {
+  .w1 {
+    display: flex;
+  }
+
+  .w2 {
+    display: none;
+  }
+
+  .w3 {
+    display: none;
+  }
+}
+
+[data-open="2"] {
+  .w1 {
+    display: none;
+  }
+
+  .w2 {
+    display: flex;
+  }
+
+  .w3 {
+    display: none;
+  }
+}
+
+[data-open="3"] {
+  .w1 {
+    display: none;
+  }
+
+  .w2 {
+    display: none;
+  }
+
+  .w3 {
+    display: flex;
+  }
+}
+
+.active-stvorka {
+
+  &[data-type="gluh"],
+  &[data-type="povorotnaya"],
+  &[data-type="povorotno-otkidnaya"] {
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+    }
+  }
+
+
+  &[data-type="gluh"] {
+
+    &::before {
+      background-color: #b8e8ff;
+    }
+  }
+
+  &[data-type="povorotnaya"] {
+
+    &::before {
+      background-image: url(../img/window/strokes.open.l.png);
+    }
+  }
+
+  &[data-type="povorotno-otkidnaya"] {
+
+    &::before {
+      background-image: url(../img/window/strokes.open.fl.png);
+    }
+  }
+}
 
 /* 
 Вывод изображений в карточке
 Шаг 5. Укажите размеры окна
 */
-
-.left-opening {
-    .w1 {
-        display: none;
-    }
-
-    .w2 {
-        display: none;
-    }
-
-    .w3 {
-        display: none;
-    }
-
-    & [data-active="1"] {
-        .w1 {
-            display: block;
-        }
-    }
-
-    & [data-active="2"] {
-        .w2 {
-            display: block;
-        }
-    }
-
-    & [data-active="3"] {
-        .w3 {
-            display: block;
-        }
-    }
-}
-
-.opening__right {}
