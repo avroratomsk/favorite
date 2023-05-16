@@ -136,10 +136,10 @@ if (range) {
 // console.log(elementStyle.color);
 
 function changeColor(value) {
-  let dataColorEl = document.querySelectorAll('[data-color]');
+  let dataColorEl = document.querySelectorAll('[data-color_id]');
 
   dataColorEl.forEach(color => {
-    color.dataset.color = value;
+    color.dataset.color_id = value;
   })
 }
 
@@ -161,15 +161,18 @@ radioChangeColor.forEach(el => {
 
 let windowActive = document.querySelectorAll('.stvorki[data-window]');
 
-document.querySelector('.stvorki[data-window]').classList.add('active');
+
+window.addEventListener('DOMContentLoaded', function (e) {
+  document.querySelectorAll('.stvorki[data-window]')[2].click();
+})
+
+
 
 
 windowActive.forEach(sash => {
-  sash.addEventListener('click', function () {
+  sash.addEventListener('click', function (e) {
 
-    windowActive.forEach(sash => {
-      sash.classList.remove('active');
-    })
+    removeClass('active', windowActive);
 
     this.classList.add('active');
 
@@ -180,41 +183,107 @@ windowActive.forEach(sash => {
       el.dataset.id = quantitySash;
     });
 
-    let openTypeSash = document.querySelector('[data-open]');
-    openTypeSash.dataset.open = quantitySash;
+    // let openTypeSash = document.querySelector('[data-open]');
+    // openTypeSash.dataset.open = quantitySash;
 
-    document.querySelectorAll('.variant').forEach(item => {
-      item.classList.remove('hide');
+    let dataOpen = document.querySelectorAll('[data-open]');
+    dataOpen.forEach(item => {
+      if (item.dataset.open == quantitySash) {
+        item.classList.add('active')
+      } else {
+        item.classList.remove('active')
+      }
     })
-
-    if (openTypeSash.dataset.open == 1) {
-      document.querySelectorAll('.variant').forEach(item => {
-        item.classList.add('hide');
-      })
-    }
-    if (openTypeSash.dataset.open == 2) {
-      document.querySelector('.opening__three').classList.add('hide');
-    }
   })
 })
+
+let inputTypeSahs = document.querySelectorAll('.opening__input--option');
+inputTypeSahs.forEach(item => {
+  item.addEventListener('click', function (e) {
+
+  })
+})
+
+
 
 let variantSash = document.querySelectorAll('.variant');
 
-variantSash.forEach(item => {
-  item.addEventListener('click', function () {
-    variantSash.forEach(item => {
-      item.classList.remove('active-type');
-    })
+addEvent(variantSash, 'click', switchStvorki);
 
-    this.classList.add('active-type');
+// document.querySelectorAll('.s1').forEach(item => item.classList.add('active'));
 
-    let dataStvorka = this.dataset.stvorka;
+function switchStvorki() {
 
-    if (dataStvorka == 1) {
-      document.querySelector('.s1').classList.add('.active-stvorka')
+  let dataAttr = this.dataset.stvorka;
+  let parent = this.closest('.el');
+
+  let s1 = parent.querySelector('.s1');
+  let s2 = parent.querySelector('.s2');
+  let s3 = parent.querySelector('.s3');
+
+
+  if (s1) {
+    if (dataAttr == 1) {
+      s1.classList.add('active');
+    } else {
+      s1.classList.remove('active');
     }
+  }
+
+  if (s2) {
+    if (dataAttr == 2) {
+      s2.classList.add('active');
+    } else {
+      s2.classList.remove('active');
+    }
+  }
+
+  if (s3) {
+    if (dataAttr == 3) {
+      s3.classList.add('active');
+    } else {
+      s3.classList.remove('active');
+    }
+  }
+
+
+
+  removeClass('active-type', variantSash);
+  this.classList.add('active-type')
+}
+
+let listRadio = document.querySelectorAll('.opening__line')
+
+
+// addEvent(listRadio, 'click', activeTypeStvorka);
+
+function activeTypeStvorka(e) {
+  let parent = this.closest('.active');
+
+  let child = parent.querySelector('input[checked]')
+  console.log(child);
+}
+
+/*
+Функция добавления события 'click', 'change' и т.д.
+addClick(elementNode, 'event', funcName)
+elementNode - список Элементов на который нужно повесить событие
+event - название события писать в 'event';
+funcName - название ф-ции 
+*/
+
+function addEvent(elementNode, event, funcName) {
+  elementNode.forEach(elem => {
+    elem.addEventListener(event, funcName);
   })
-})
+}
+
+// Функция удаления класса  
+function removeClass(value, elementNode) {
+  elementNode.forEach(elem => {
+    elem.classList.remove(value);
+  })
+}
 
 
 

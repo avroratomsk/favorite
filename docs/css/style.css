@@ -3122,187 +3122,187 @@ select:-webkit-autofill:focus {
   width: 294px;
 }
 
-.no-webp [data-color="0"] .w1 .window__bg{
+.no-webp [data-color_id="0"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.png); }
 
-.no-webp [data-color="0"] .w2 .window__bg{
+.no-webp [data-color_id="0"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.png); }
 
-.no-webp [data-color="0"] .w3 .window__bg{
+.no-webp [data-color_id="0"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.png); }
 
-[data-color="0"] [data-id="1"] {
+[data-color_id="0"] [data-id="1"] {
   background-image: url(../img/window/win1.svg);
 }
 
-[data-color="0"] [data-id="2"] {
+[data-color_id="0"] [data-id="2"] {
   background-image: url(../img/window/win2.svg);
 }
 
-[data-color="0"] [data-id="3"] {
+[data-color_id="0"] [data-id="3"] {
   background-image: url(../img/window/win3.svg);
 }
 
-.no-webp [data-color="1"] .w1 .window__bg{
+.no-webp [data-color_id="1"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.color_1.png); }
 
-.no-webp [data-color="1"] .w2 .window__bg{
+.no-webp [data-color_id="1"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.color_1.png); }
 
-.no-webp [data-color="1"] .w3 .window__bg{
+.no-webp [data-color_id="1"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.color_1.png); }
 
-.no-webp [data-color="1"] [data-id="1"]{
+.no-webp [data-color_id="1"] [data-id="1"]{
   background-image: url(../img/window/win1_color_1.png); }
 
-.no-webp [data-color="1"] [data-id="2"]{
+.no-webp [data-color_id="1"] [data-id="2"]{
   background-image: url(../img/window/win2_color_1.png); }
 
-.no-webp [data-color="1"] [data-id="3"]{
+.no-webp [data-color_id="1"] [data-id="3"]{
   background-image: url(../img/window/win3_color_1.png); }
 
-.no-webp [data-color="2"] .w1 .window__bg{
+.no-webp [data-color_id="2"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.color_2.png); }
 
-.no-webp [data-color="2"] .w2 .window__bg{
+.no-webp [data-color_id="2"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.color_2.png); }
 
-.no-webp [data-color="2"] .w3 .window__bg{
+.no-webp [data-color_id="2"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.color_2.png); }
 
-.no-webp [data-color="2"] [data-id="1"]{
+.no-webp [data-color_id="2"] [data-id="1"]{
   background-image: url(../img/window/win1_color_2.png); }
 
-.no-webp [data-color="2"] [data-id="2"]{
+.no-webp [data-color_id="2"] [data-id="2"]{
   background-image: url(../img/window/win2_color_2.png); }
 
-.no-webp [data-color="2"] [data-id="3"]{
+.no-webp [data-color_id="2"] [data-id="3"]{
   background-image: url(../img/window/win3_color_2.png); }
 
-.no-webp [data-color="3"] .w1 .window__bg{
+.no-webp [data-color_id="3"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.color_3.png); }
 
-.no-webp [data-color="3"] .w2 .window__bg{
+.no-webp [data-color_id="3"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.color_3.png); }
 
-.no-webp [data-color="3"] .w3 .window__bg{
+.no-webp [data-color_id="3"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.color_3.png); }
 
-.no-webp [data-color="3"] [data-id="1"]{
+.no-webp [data-color_id="3"] [data-id="1"]{
   background-image: url(../img/window/win1_color_3.png); }
 
-.no-webp [data-color="3"] [data-id="2"]{
+.no-webp [data-color_id="3"] [data-id="2"]{
   background-image: url(../img/window/win2_color_3.png); }
 
-.no-webp [data-color="3"] [data-id="3"]{
+.no-webp [data-color_id="3"] [data-id="3"]{
   background-image: url(../img/window/win3_color_3.png); }
 
-.no-webp [data-color="4"] .w1 .window__bg{
+.no-webp [data-color_id="4"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.color_4.png); }
 
-.no-webp [data-color="4"] .w2 .window__bg{
+.no-webp [data-color_id="4"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.color_4.png); }
 
-.no-webp [data-color="4"] .w3 .window__bg{
+.no-webp [data-color_id="4"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.color_4.png); }
 
-.no-webp [data-color="4"] [data-id="1"]{
+.no-webp [data-color_id="4"] [data-id="1"]{
   background-image: url(../img/window/win1_color_4.png); }
 
-.no-webp [data-color="4"] [data-id="2"]{
+.no-webp [data-color_id="4"] [data-id="2"]{
   background-image: url(../img/window/win2_color_4.png); }
 
-.no-webp [data-color="4"] [data-id="3"]{
+.no-webp [data-color_id="4"] [data-id="3"]{
   background-image: url(../img/window/win3_color_4.png); }
 
-.no-webp [data-color="5"] .w1 .window__bg{
+.no-webp [data-color_id="5"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.color_5.png); }
 
-.no-webp [data-color="5"] .w2 .window__bg{
+.no-webp [data-color_id="5"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.color_5.png); }
 
-.no-webp [data-color="5"] .w3 .window__bg{
+.no-webp [data-color_id="5"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.color_5.png); }
 
-.no-webp [data-color="5"] [data-id="1"]{
+.no-webp [data-color_id="5"] [data-id="1"]{
   background-image: url(../img/window/win1_color_5.png); }
 
-.no-webp [data-color="5"] [data-id="2"]{
+.no-webp [data-color_id="5"] [data-id="2"]{
   background-image: url(../img/window/win2_color_5.png); }
 
-.no-webp [data-color="5"] [data-id="3"]{
+.no-webp [data-color_id="5"] [data-id="3"]{
   background-image: url(../img/window/win3_color_5.png); }
 
-.no-webp [data-color="6"] .w1 .window__bg{
+.no-webp [data-color_id="6"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.color_6.png); }
 
-.no-webp [data-color="6"] .w2 .window__bg{
+.no-webp [data-color_id="6"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.color_6.png); }
 
-.no-webp [data-color="6"] .w3 .window__bg{
+.no-webp [data-color_id="6"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.color_6.png); }
 
-.no-webp [data-color="6"] [data-id="1"]{
+.no-webp [data-color_id="6"] [data-id="1"]{
   background-image: url(../img/window/win1_color_6.png); }
 
-.no-webp [data-color="6"] [data-id="2"]{
+.no-webp [data-color_id="6"] [data-id="2"]{
   background-image: url(../img/window/win2_color_6.png); }
 
-.no-webp [data-color="6"] [data-id="3"]{
+.no-webp [data-color_id="6"] [data-id="3"]{
   background-image: url(../img/window/win3_color_6.png); }
 
-.no-webp [data-color="7"] .w1 .window__bg{
+.no-webp [data-color_id="7"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.color_7.png); }
 
-.no-webp [data-color="7"] .w2 .window__bg{
+.no-webp [data-color_id="7"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.color_7.png); }
 
-.no-webp [data-color="7"] .w3 .window__bg{
+.no-webp [data-color_id="7"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.color_7.png); }
 
-.no-webp [data-color="7"] [data-id="1"]{
+.no-webp [data-color_id="7"] [data-id="1"]{
   background-image: url(../img/window/win1_color_7.png); }
 
-.no-webp [data-color="7"] [data-id="2"]{
+.no-webp [data-color_id="7"] [data-id="2"]{
   background-image: url(../img/window/win2_color_7.png); }
 
-.no-webp [data-color="7"] [data-id="3"]{
+.no-webp [data-color_id="7"] [data-id="3"]{
   background-image: url(../img/window/win3_color_7.png); }
 
-.no-webp [data-color="8"] .w1 .window__bg{
+.no-webp [data-color_id="8"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.color_8.png); }
 
-.no-webp [data-color="8"] .w2 .window__bg{
+.no-webp [data-color_id="8"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.color_8.png); }
 
-.no-webp [data-color="8"] .w3 .window__bg{
+.no-webp [data-color_id="8"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.color_8.png); }
 
-.no-webp [data-color="8"] [data-id="1"]{
+.no-webp [data-color_id="8"] [data-id="1"]{
   background-image: url(../img/window/win1_color_8.png); }
 
-.no-webp [data-color="8"] [data-id="2"]{
+.no-webp [data-color_id="8"] [data-id="2"]{
   background-image: url(../img/window/win2_color_8.png); }
 
-.no-webp [data-color="8"] [data-id="3"]{
+.no-webp [data-color_id="8"] [data-id="3"]{
   background-image: url(../img/window/win3_color_8.png); }
 
-.no-webp [data-color="9"] .w1 .window__bg{
+.no-webp [data-color_id="9"] .w1 .window__bg{
   background-image: url(../img/window/strokes.1.color_9.png); }
 
-.no-webp [data-color="9"] .w2 .window__bg{
+.no-webp [data-color_id="9"] .w2 .window__bg{
   background-image: url(../img/window/strokes.2.color_9.png); }
 
-.no-webp [data-color="9"] .w3 .window__bg{
+.no-webp [data-color_id="9"] .w3 .window__bg{
   background-image: url(../img/window/strokes.3.color_9.png); }
 
-.no-webp [data-color="9"] [data-id="1"]{
+.no-webp [data-color_id="9"] [data-id="1"]{
   background-image: url(../img/window/win1_color_9.png); }
 
-.no-webp [data-color="9"] [data-id="2"]{
+.no-webp [data-color_id="9"] [data-id="2"]{
   background-image: url(../img/window/win2_color_9.png); }
 
-.no-webp [data-color="9"] [data-id="3"]{
+.no-webp [data-color_id="9"] [data-id="3"]{
   background-image: url(../img/window/win3_color_9.png); }
 
 .no-webp .w1.active .window__stvorka:nth-child(1){
@@ -3323,71 +3323,10 @@ select:-webkit-autofill:focus {
 .no-webp .w3.active .window__stvorka:nth-child(3){
   background-image: url(../img/window/win_right.jpg); }
 
-[data-open="1"] .w1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-[data-open="1"] .w2 {
-  display: none;
-}
-
-[data-open="1"] .w3 {
-  display: none;
-}
-
-[data-open="2"] .w1 {
-  display: none;
-}
-
-[data-open="2"] .w2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-[data-open="2"] .w3 {
-  display: none;
-}
-
-[data-open="3"] .w1 {
-  display: none;
-}
-
-[data-open="3"] .w2 {
-  display: none;
-}
-
-[data-open="3"] .w3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.active-stvorka[data-type=gluh],
-.active-stvorka[data-type=povorotnaya],
-.active-stvorka[data-type=povorotno-otkidnaya] {
-  position: relative;
-}
-
-.active-stvorka[data-type=gluh]::before,
-.active-stvorka[data-type=povorotnaya]::before,
-.active-stvorka[data-type=povorotno-otkidnaya]::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-}
-
-.active-stvorka[data-type=gluh]::before {
-  background-color: #b8e8ff;
-}
-
-.no-webp .active-stvorka[data-type=povorotnaya]::before{
+.no-webp [data-type=povorotnaya]{
   background-image: url(../img/window/strokes.open.l.png); }
 
-.no-webp .active-stvorka[data-type=povorotno-otkidnaya]::before{
+.no-webp [data-type=povorotno-otkidnaya]{
   background-image: url(../img/window/strokes.open.fl.png); }
 
 /* 
@@ -3466,7 +3405,6 @@ select:-webkit-autofill:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #000;
 }
 
 .window__number {
@@ -3647,11 +3585,15 @@ select:-webkit-autofill:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 650px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
   margin: auto;
+}
+
+.opening .window {
+  margin-right: 40px;
 }
 
 .opening__stvorka {
@@ -3731,14 +3673,20 @@ select:-webkit-autofill:focus {
   display: block;
 }
 
-.opening__input--option:checked + .opening__label::after {
+.opening__input--option:checked + label::after {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
 
-.opening__input--option:checked + .opening__label::before {
+.opening__input--option:checked ~ .opening__label::before {
   border-color: #BE2E21;
+}
+
+.opening__input--option:checked::after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .opening__option {
@@ -3755,6 +3703,10 @@ select:-webkit-autofill:focus {
   font-style: italic;
   font-weight: 100;
   margin: 15px 0px 15px;
+}
+
+.opening__variant {
+  margin-right: 40px;
 }
 
 .opening .variant.hide {
@@ -3802,22 +3754,55 @@ select:-webkit-autofill:focus {
   background-size: contain;
 }
 
-.opening .window__stvorka .active-stvorka {
+.opening .window__stvorka .s1.active,
+.opening .window__stvorka .s2.active,
+.opening .window__stvorka .s3.active {
   position: relative;
-  width: 100%;
-  height: 100%;
 }
 
-.opening .window__stvorka .active-stvorka::before {
+.opening .window__stvorka .s1.active::before,
+.opening .window__stvorka .s2.active::before,
+.opening .window__stvorka .s3.active::before {
   content: "";
-  background-color: #b8e8ff;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 21;
+  background-color: #b8e8ff;
 }
+
+.el1,
+.el2,
+.el3 {
+  display: none;
+}
+
+.el1.active,
+.el2.active,
+.el3.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.no-webp .el1.active .window__stvorka:nth-child(1){
+  background-image: url(../img/window/win_left.jpg); }
+
+.no-webp .el2.active .window__stvorka:nth-child(1){
+  background-image: url(../img/window/win_left.jpg); }
+
+.no-webp .el2.active .window__stvorka:nth-child(2){
+  background-image: url(../img/window/win_middle.jpg); }
+
+.no-webp .el3.active .window__stvorka:nth-child(1){
+  background-image: url(../img/window/win_left.jpg); }
+
+.no-webp .el3.active .window__stvorka:nth-child(2){
+  background-image: url(../img/window/win_middle.jpg); }
+
+.no-webp .el3.active .window__stvorka:nth-child(3){
+  background-image: url(../img/window/win_right.jpg); }
 
 .additionally {
   display: -ms-grid;
@@ -4777,119 +4762,119 @@ select:-webkit-autofill:focus {
   }
 }
 
-.webp [data-color="0"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.webp); }
+.webp [data-color_id="0"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.webp); }
 
-.webp [data-color="0"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.webp); }
+.webp [data-color_id="0"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.webp); }
 
-.webp [data-color="0"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.webp); }
+.webp [data-color_id="0"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.webp); }
 
-.webp [data-color="1"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_1.webp); }
+.webp [data-color_id="1"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_1.webp); }
 
-.webp [data-color="1"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_1.webp); }
+.webp [data-color_id="1"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_1.webp); }
 
-.webp [data-color="1"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_1.webp); }
+.webp [data-color_id="1"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_1.webp); }
 
-.webp [data-color="1"] [data-id="1"]{ background-image: url(../img/window/win1_color_1.webp); }
+.webp [data-color_id="1"] [data-id="1"]{ background-image: url(../img/window/win1_color_1.webp); }
 
-.webp [data-color="1"] [data-id="2"]{ background-image: url(../img/window/win2_color_1.webp); }
+.webp [data-color_id="1"] [data-id="2"]{ background-image: url(../img/window/win2_color_1.webp); }
 
-.webp [data-color="1"] [data-id="3"]{ background-image: url(../img/window/win3_color_1.webp); }
+.webp [data-color_id="1"] [data-id="3"]{ background-image: url(../img/window/win3_color_1.webp); }
 
-.webp [data-color="2"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_2.webp); }
+.webp [data-color_id="2"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_2.webp); }
 
-.webp [data-color="2"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_2.webp); }
+.webp [data-color_id="2"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_2.webp); }
 
-.webp [data-color="2"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_2.webp); }
+.webp [data-color_id="2"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_2.webp); }
 
-.webp [data-color="2"] [data-id="1"]{ background-image: url(../img/window/win1_color_2.webp); }
+.webp [data-color_id="2"] [data-id="1"]{ background-image: url(../img/window/win1_color_2.webp); }
 
-.webp [data-color="2"] [data-id="2"]{ background-image: url(../img/window/win2_color_2.webp); }
+.webp [data-color_id="2"] [data-id="2"]{ background-image: url(../img/window/win2_color_2.webp); }
 
-.webp [data-color="2"] [data-id="3"]{ background-image: url(../img/window/win3_color_2.webp); }
+.webp [data-color_id="2"] [data-id="3"]{ background-image: url(../img/window/win3_color_2.webp); }
 
-.webp [data-color="3"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_3.webp); }
+.webp [data-color_id="3"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_3.webp); }
 
-.webp [data-color="3"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_3.webp); }
+.webp [data-color_id="3"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_3.webp); }
 
-.webp [data-color="3"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_3.webp); }
+.webp [data-color_id="3"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_3.webp); }
 
-.webp [data-color="3"] [data-id="1"]{ background-image: url(../img/window/win1_color_3.webp); }
+.webp [data-color_id="3"] [data-id="1"]{ background-image: url(../img/window/win1_color_3.webp); }
 
-.webp [data-color="3"] [data-id="2"]{ background-image: url(../img/window/win2_color_3.webp); }
+.webp [data-color_id="3"] [data-id="2"]{ background-image: url(../img/window/win2_color_3.webp); }
 
-.webp [data-color="3"] [data-id="3"]{ background-image: url(../img/window/win3_color_3.webp); }
+.webp [data-color_id="3"] [data-id="3"]{ background-image: url(../img/window/win3_color_3.webp); }
 
-.webp [data-color="4"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_4.webp); }
+.webp [data-color_id="4"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_4.webp); }
 
-.webp [data-color="4"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_4.webp); }
+.webp [data-color_id="4"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_4.webp); }
 
-.webp [data-color="4"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_4.webp); }
+.webp [data-color_id="4"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_4.webp); }
 
-.webp [data-color="4"] [data-id="1"]{ background-image: url(../img/window/win1_color_4.webp); }
+.webp [data-color_id="4"] [data-id="1"]{ background-image: url(../img/window/win1_color_4.webp); }
 
-.webp [data-color="4"] [data-id="2"]{ background-image: url(../img/window/win2_color_4.webp); }
+.webp [data-color_id="4"] [data-id="2"]{ background-image: url(../img/window/win2_color_4.webp); }
 
-.webp [data-color="4"] [data-id="3"]{ background-image: url(../img/window/win3_color_4.webp); }
+.webp [data-color_id="4"] [data-id="3"]{ background-image: url(../img/window/win3_color_4.webp); }
 
-.webp [data-color="5"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_5.webp); }
+.webp [data-color_id="5"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_5.webp); }
 
-.webp [data-color="5"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_5.webp); }
+.webp [data-color_id="5"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_5.webp); }
 
-.webp [data-color="5"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_5.webp); }
+.webp [data-color_id="5"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_5.webp); }
 
-.webp [data-color="5"] [data-id="1"]{ background-image: url(../img/window/win1_color_5.webp); }
+.webp [data-color_id="5"] [data-id="1"]{ background-image: url(../img/window/win1_color_5.webp); }
 
-.webp [data-color="5"] [data-id="2"]{ background-image: url(../img/window/win2_color_5.webp); }
+.webp [data-color_id="5"] [data-id="2"]{ background-image: url(../img/window/win2_color_5.webp); }
 
-.webp [data-color="5"] [data-id="3"]{ background-image: url(../img/window/win3_color_5.webp); }
+.webp [data-color_id="5"] [data-id="3"]{ background-image: url(../img/window/win3_color_5.webp); }
 
-.webp [data-color="6"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_6.webp); }
+.webp [data-color_id="6"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_6.webp); }
 
-.webp [data-color="6"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_6.webp); }
+.webp [data-color_id="6"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_6.webp); }
 
-.webp [data-color="6"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_6.webp); }
+.webp [data-color_id="6"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_6.webp); }
 
-.webp [data-color="6"] [data-id="1"]{ background-image: url(../img/window/win1_color_6.webp); }
+.webp [data-color_id="6"] [data-id="1"]{ background-image: url(../img/window/win1_color_6.webp); }
 
-.webp [data-color="6"] [data-id="2"]{ background-image: url(../img/window/win2_color_6.webp); }
+.webp [data-color_id="6"] [data-id="2"]{ background-image: url(../img/window/win2_color_6.webp); }
 
-.webp [data-color="6"] [data-id="3"]{ background-image: url(../img/window/win3_color_6.webp); }
+.webp [data-color_id="6"] [data-id="3"]{ background-image: url(../img/window/win3_color_6.webp); }
 
-.webp [data-color="7"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_7.webp); }
+.webp [data-color_id="7"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_7.webp); }
 
-.webp [data-color="7"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_7.webp); }
+.webp [data-color_id="7"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_7.webp); }
 
-.webp [data-color="7"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_7.webp); }
+.webp [data-color_id="7"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_7.webp); }
 
-.webp [data-color="7"] [data-id="1"]{ background-image: url(../img/window/win1_color_7.webp); }
+.webp [data-color_id="7"] [data-id="1"]{ background-image: url(../img/window/win1_color_7.webp); }
 
-.webp [data-color="7"] [data-id="2"]{ background-image: url(../img/window/win2_color_7.webp); }
+.webp [data-color_id="7"] [data-id="2"]{ background-image: url(../img/window/win2_color_7.webp); }
 
-.webp [data-color="7"] [data-id="3"]{ background-image: url(../img/window/win3_color_7.webp); }
+.webp [data-color_id="7"] [data-id="3"]{ background-image: url(../img/window/win3_color_7.webp); }
 
-.webp [data-color="8"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_8.webp); }
+.webp [data-color_id="8"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_8.webp); }
 
-.webp [data-color="8"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_8.webp); }
+.webp [data-color_id="8"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_8.webp); }
 
-.webp [data-color="8"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_8.webp); }
+.webp [data-color_id="8"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_8.webp); }
 
-.webp [data-color="8"] [data-id="1"]{ background-image: url(../img/window/win1_color_8.webp); }
+.webp [data-color_id="8"] [data-id="1"]{ background-image: url(../img/window/win1_color_8.webp); }
 
-.webp [data-color="8"] [data-id="2"]{ background-image: url(../img/window/win2_color_8.webp); }
+.webp [data-color_id="8"] [data-id="2"]{ background-image: url(../img/window/win2_color_8.webp); }
 
-.webp [data-color="8"] [data-id="3"]{ background-image: url(../img/window/win3_color_8.webp); }
+.webp [data-color_id="8"] [data-id="3"]{ background-image: url(../img/window/win3_color_8.webp); }
 
-.webp [data-color="9"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_9.webp); }
+.webp [data-color_id="9"] .w1 .window__bg{ background-image: url(../img/window/strokes.1.color_9.webp); }
 
-.webp [data-color="9"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_9.webp); }
+.webp [data-color_id="9"] .w2 .window__bg{ background-image: url(../img/window/strokes.2.color_9.webp); }
 
-.webp [data-color="9"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_9.webp); }
+.webp [data-color_id="9"] .w3 .window__bg{ background-image: url(../img/window/strokes.3.color_9.webp); }
 
-.webp [data-color="9"] [data-id="1"]{ background-image: url(../img/window/win1_color_9.webp); }
+.webp [data-color_id="9"] [data-id="1"]{ background-image: url(../img/window/win1_color_9.webp); }
 
-.webp [data-color="9"] [data-id="2"]{ background-image: url(../img/window/win2_color_9.webp); }
+.webp [data-color_id="9"] [data-id="2"]{ background-image: url(../img/window/win2_color_9.webp); }
 
-.webp [data-color="9"] [data-id="3"]{ background-image: url(../img/window/win3_color_9.webp); }
+.webp [data-color_id="9"] [data-id="3"]{ background-image: url(../img/window/win3_color_9.webp); }
 
 .webp .w1.active .window__stvorka:nth-child(1){ background-image: url(../img/window/win_left.webp); }
 
@@ -4903,6 +4888,18 @@ select:-webkit-autofill:focus {
 
 .webp .w3.active .window__stvorka:nth-child(3){ background-image: url(../img/window/win_right.webp); }
 
-.webp .active-stvorka[data-type=povorotnaya]::before{ background-image: url(../img/window/strokes.open.l.webp); }
+.webp [data-type=povorotnaya]{ background-image: url(../img/window/strokes.open.l.webp); }
 
-.webp .active-stvorka[data-type=povorotno-otkidnaya]::before{ background-image: url(../img/window/strokes.open.fl.webp); }
+.webp [data-type=povorotno-otkidnaya]{ background-image: url(../img/window/strokes.open.fl.webp); }
+
+.webp .el1.active .window__stvorka:nth-child(1){ background-image: url(../img/window/win_left.webp); }
+
+.webp .el2.active .window__stvorka:nth-child(1){ background-image: url(../img/window/win_left.webp); }
+
+.webp .el2.active .window__stvorka:nth-child(2){ background-image: url(../img/window/win_middle.webp); }
+
+.webp .el3.active .window__stvorka:nth-child(1){ background-image: url(../img/window/win_left.webp); }
+
+.webp .el3.active .window__stvorka:nth-child(2){ background-image: url(../img/window/win_middle.webp); }
+
+.webp .el3.active .window__stvorka:nth-child(3){ background-image: url(../img/window/win_right.webp); }

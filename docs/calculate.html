@@ -6,12 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230515175819">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230516175037">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230515175819" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230516175037" rel="stylesheet">
 </head>
 
 <body>
@@ -331,7 +331,7 @@
 								На следующем шаге — вы сможете настроить каждую створку.
 							</p>
 						</div>
-						<div class="card-calculate__window window" data-color="0">
+						<div class="card-calculate__window window" data-color_id="0">
 							<div class="window__item w1 stvorki" data-window="1">
 								<div class="window__wrapper">
 									<div class="window__bg">
@@ -376,7 +376,7 @@
 								<span>Шаг 5.</span> Укажите размеры окна
 							</h4>
 						</div>
-						<div class="card-calculate__window size" data-color="0">
+						<div class="card-calculate__window size" data-color_id="0">
 							<div class="size__left">
 								<div class="size__window" data-id="1"></div>
 							</div>
@@ -436,54 +436,17 @@
 								<span>Шаг 6.</span> Выберите тип открытия створки
 							</h4>
 						</div>
-						<div class="opening__body">
-							<div class="opening__variant">
-								<div class="opening__one variant" data-stvorka="1">
-									Вариант октрытия 1 створки
-								</div>
-								<div class="opening__two variant" data-stvorka="2">
-									Вариант октрытия 2 створки
-								</div>
-								<div class="opening__three variant" data-stvorka="3">
-									Вариант окрытия 3 створки
-								</div>
-							</div>
-							<div class="card-calculate__window window" data-color="0" data-open="1">
-								<div class="window__item w1 active">
+						<div class="opening__body el1 el active" data-color_id="0" data-open="1">
+							<div class="card-calculate__window window">
+								<div class="window__item w1">
 									<div class="window__wrapper">
 										<div class="window__bg">
 										</div>
 										<div class="window__stvorki">
 											<div class="window__stvorka">
-												<div class="s1 active-stvorka" data-type="povorotnaya">
+												<div class="s1 active-stvorka" data-type="povorotno-otkidnaya">
 												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-								<div class="window__item w2 active">
-									<div class="window__wrapper">
-										<div class="window__bg">
-										</div>
-										<div class="window__stvorki">
-											<div class="window__stvorka">
-												<div class="s1 active-stvorka" data-type="povorotnaya">
-												</div>
-											</div>
-											<div class="window__stvorka">
-												<div class="s2" style="background-image: url(img/window/strokes.open.fl.png);">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="window__item w3 active">
-									<div class="window__wrapper">
-										<div class="window__bg">
-										</div>
-										<div class="window__stvorki">
-											<div class="window__stvorka"></div>
-											<div class="window__stvorka"></div>
 										</div>
 									</div>
 								</div>
@@ -492,12 +455,12 @@
 								<p class="opening__stvorka">Левая створка</p>
 								<div class="opening__line">
 									<div class="opening__input">
-										<input type="radio" id="gluh" value="Глухая" class="input_radio" name="option" checked>
+										<input type="radio" id="gluh" value="Глухая" class="input_radio" name="option" data-value_option="gluh">
 										<label for="gluh" class="input_label">Глухая</label>
 									</div>
 								</div>
 								<div class="opening__line">
-									<input type="radio" id="povorotnaya" value="Поворотная" name="option" class="opening__input--option">
+									<input type="radio" id="povorotnaya" value="Поворотная" name="option" class="opening__input--option" data-value_option="povorotnaya">
 									<label for="povorotnaya" class="opening__label">
 										<span>Поворотная</span>
 									</label>
@@ -514,8 +477,168 @@
 										</div>
 									</div>
 								</div>
+
 								<div class="opening__line">
+									<input type="radio" id="povorotno-otkidnaya" value="Поворотно-откидная" name="option" class="opening__input--option" data-value_option="povorotno-otkidnaya">
+									<label for="povorotno-otkidnaya" class="opening__label">
+										<span>Поворотно-откидная</span>
+									</label>
+
+									<div class="opening__option">
+										<p class="opening__option--title">Дополнительные опции</p>
+										<div class="opening__input">
+											<input type="radio" id="moskit-2" value="Москитная сетка" class="input_checkbox">
+											<label for="moskit-2" class="input_label">Москитная сетка</label>
+										</div>
+										<div class="opening__input">
+											<input type="radio" id="zamok-2" value="Детский замок" class="input_checkbox">
+											<label for="zamok-2" class="input_label">Детский замок</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="opening__body el2 el active" data-color_id="0" data-open="2">
+							<div class="opening__variant">
+								<div class="opening__one variant" data-stvorka="1">
+									Вариант октрытия 1 створки
+								</div>
+								<div class="opening__two variant" data-stvorka="2">
+									Вариант октрытия 2 створки
+								</div>
+							</div>
+							<div class="card-calculate__window window">
+								<div class="window__item w2">
+									<div class="window__wrapper">
+										<div class="window__bg">
+										</div>
+										<div class="window__stvorki">
+											<div class="window__stvorka">
+												<div class="s1" data-type="gluh"></div>
+											</div>
+											<div class="window__stvorka">
+												<div class="s2" data-type=""></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="opening__type">
+								<p class="opening__stvorka">Левая створка</p>
+								<div class="opening__line">
+									<div class="opening__input">
+										<input type="radio" id="gluh1" value="Глухая" class="input_radio" name="option" checked>
+										<label for="gluh1" class="input_label">Глухая</label>
+									</div>
+								</div>
+								<div class="opening__line">
+									<input type="radio" id="povorotnaya1" value="Поворотная" name="option" class="opening__input--option">
+									<label for="povorotnaya1" class="opening__label">
+										<span>Поворотная</span>
+									</label>
+
+									<div class="opening__option">
+										<p class="opening__option--title">Дополнительные опции</p>
+										<div class="opening__input">
+											<input type="radio" id="moskit-1" value="Москитная сетка" class="input_checkbox">
+											<label for="moskit-1" class="input_label">Москитная сетка</label>
+										</div>
+										<div class="opening__input">
+											<input type="radio" id="zamok-1" value="Детский замок" class="input_checkbox">
+											<label for="zamok-1" class="input_label">Детский замок</label>
+										</div>
+									</div>
+								</div>
+								<div class="opening__line">
+									<input type="radio" id="povorotno-otkidnaya1" value="Поворотно-откидная" name="option" class="opening__input--option">
+									<label for="povorotno-otkidnaya1" class="opening__label">
+										<span>Поворотно-откидная</span>
+									</label>
+
+									<div class="opening__option">
+										<p class="opening__option--title">Дополнительные опции</p>
+										<div class="opening__input">
+											<input type="radio" id="moskit-2" value="Москитная сетка" class="input_checkbox">
+											<label for="moskit-2" class="input_label">Москитная сетка</label>
+										</div>
+										<div class="opening__input">
+											<input type="radio" id="zamok-2" value="Детский замок" class="input_checkbox">
+											<label for="zamok-2" class="input_label">Детский замок</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="opening__body el3 el active" data-color_id="0" data-open="3">
+							<div class="opening__variant">
+								<div class="opening__one variant" data-stvorka="1">
+									Вариант октрытия 1 створки
+								</div>
+								<div class="opening__two variant" data-stvorka="2">
+									Вариант октрытия 2 створки
+								</div>
+								<div class="opening__three variant" data-stvorka="3">
+									Вариант окрытия 3 створки
+								</div>
+							</div>
+							<div class="card-calculate__window window">
+								<div class="window__item w3">
+									<div class="window__wrapper">
+										<div class="window__bg">
+										</div>
+										<div class="window__stvorki">
+											<div class="window__stvorka">
+												<div class="s1" data-type></div>
+											</div>
+											<div class="window__stvorka">
+												<div class="s2" data-type></div>
+											</div>
+											<div class="window__stvorka">
+												<div class="s3" data-type></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="opening__type">
+								<p class="opening__stvorka">Левая створка</p>
+								<div class="opening__line">
+
+									<div class="opening__input">
+
+										<input type="radio" id="gluh2" value="Глухая" class="input_radio" name="option">
+										<label for="gluh2" class="input_label">Глухая</label>
+
+									</div>
+
+								</div>
+								<div class="opening__line">
+
+									<input type="radio" id="povorotnaya2" value="Поворотная" name="option" class="opening__input--option">
+
+									<label for="povorotnaya2" class="opening__label">
+										<span>Поворотная</span>
+									</label>
+
+									<div class="opening__option">
+										<p class="opening__option--title">Дополнительные опции</p>
+										<div class="opening__input">
+											<input type="radio" id="moskit-1" value="Москитная сетка" class="input_checkbox">
+											<label for="moskit-1" class="input_label">Москитная сетка</label>
+										</div>
+										<div class="opening__input">
+											<input type="radio" id="zamok-1" value="Детский замок" class="input_checkbox">
+											<label for="zamok-1" class="input_label">Детский замок</label>
+										</div>
+									</div>
+
+								</div>
+								<div class="opening__line">
+
 									<input type="radio" id="povorotno-otkidnaya" value="Поворотно-откидная" name="option" class="opening__input--option">
+
 									<label for="povorotno-otkidnaya" class="opening__label">
 										<span>Поворотно-откидная</span>
 									</label>
@@ -851,12 +974,12 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ&_v=20230515175819>"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20230515175819"></script>
-	<!-- <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js?_v=20230515175819"
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ&_v=20230516175037>"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20230516175037"></script>
+	<!-- <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js?_v=20230516175037"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-	<script src="js/app.min.js?_v=20230515175819"></script>
+	<script src="js/app.min.js?_v=20230516175037"></script>
 </body>
 
 </html>
