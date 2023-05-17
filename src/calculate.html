@@ -224,11 +224,11 @@
                                     <div class="range-size">
                                         <div class="range-size__top">
                                             <p>Ширина</p>
-                                            <input type="number" value="1250" class="range-value">
+                                            <input type="number" value="1250" class="range-value" readonly>
                                         </div>
                                         <div class="range-size__wrapper">
                                             <input type="range" min="100" max="2500" value="1250"
-                                                class="range-size__input">
+                                                class="range-size__input" readonly>
                                         </div>
                                     </div>
 
@@ -289,25 +289,25 @@
                                         </div>
                                         <div class="window__stvorki">
                                             <div class="window__stvorka">
-                                                <div class="s1 active-stvorka" data-type="povorotno-otkidnaya">
+                                                <div class="s1 active-stvorka" data-type="">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="opening__type">
-                                <p class="opening__stvorka">Левая створка</p>
+                            <div class="opening__type" id="opening__type-1">
+                                <p class="opening__stvorka">Вариант открытия</p>
                                 <div class="opening__line">
                                     <div class="opening__input">
                                         <input type="radio" id="gluh" value="Глухая" class="input_radio" name="option"
-                                            data-value_option="gluh">
+                                            data-stvorka_type="gluh">
                                         <label for="gluh" class="input_label">Глухая</label>
                                     </div>
                                 </div>
                                 <div class="opening__line">
                                     <input type="radio" id="povorotnaya" value="Поворотная" name="option"
-                                        class="opening__input--option" data-value_option="povorotnaya">
+                                        class="opening__input--option" data-stvorka_type="povorotnaya">
                                     <label for="povorotnaya" class="opening__label">
                                         <span>Поворотная</span>
                                     </label>
@@ -330,7 +330,7 @@
                                 <div class="opening__line">
                                     <input type="radio" id="povorotno-otkidnaya" value="Поворотно-откидная"
                                         name="option" class="opening__input--option"
-                                        data-value_option="povorotno-otkidnaya">
+                                        data-stvorka_type="povorotno-otkidnaya">
                                     <label for="povorotno-otkidnaya" class="opening__label">
                                         <span>Поворотно-откидная</span>
                                     </label>
@@ -353,14 +353,7 @@
                         </div>
 
                         <div class="opening__body el2 el active" data-color_id="0" data-open="2">
-                            <div class="opening__variant">
-                                <div class="opening__one variant" data-stvorka="1">
-                                    Вариант октрытия 1 створки
-                                </div>
-                                <div class="opening__two variant" data-stvorka="2">
-                                    Вариант октрытия 2 створки
-                                </div>
-                            </div>
+
                             <div class="card-calculate__window window">
                                 <div class="window__item w2">
                                     <div class="window__wrapper">
@@ -368,7 +361,7 @@
                                         </div>
                                         <div class="window__stvorki">
                                             <div class="window__stvorka">
-                                                <div class="s1" data-type="gluh"></div>
+                                                <div class="s1" data-type=""></div>
                                             </div>
                                             <div class="window__stvorka">
                                                 <div class="s2" data-type=""></div>
@@ -376,19 +369,27 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="opening__variant">
+                                    <div class="opening__one variant" data-stvorka="1">
+                                        1
+                                    </div>
+                                    <div class="opening__two variant" data-stvorka="2">
+                                        2
+                                    </div>
+                                </div>
                             </div>
-                            <div class="opening__type">
-                                <p class="opening__stvorka">Левая створка</p>
+                            <div class="opening__type" id="opening__type-2">
+                                <p class="opening__stvorka">Вариант открытия</p>
                                 <div class="opening__line">
                                     <div class="opening__input">
                                         <input type="radio" id="gluh1" value="Глухая" class="input_radio" name="option"
-                                            checked>
+                                            checked data-stvorka_type="gluh">
                                         <label for="gluh1" class="input_label">Глухая</label>
                                     </div>
                                 </div>
                                 <div class="opening__line">
                                     <input type="radio" id="povorotnaya1" value="Поворотная" name="option"
-                                        class="opening__input--option">
+                                        class="opening__input--option" data-stvorka_type="povorotnaya">
                                     <label for="povorotnaya1" class="opening__label">
                                         <span>Поворотная</span>
                                     </label>
@@ -409,7 +410,8 @@
                                 </div>
                                 <div class="opening__line">
                                     <input type="radio" id="povorotno-otkidnaya1" value="Поворотно-откидная"
-                                        name="option" class="opening__input--option">
+                                        name="option" class="opening__input--option"
+                                        data-stvorka_type="povorotno-otkidnaya">
                                     <label for="povorotno-otkidnaya1" class="opening__label">
                                         <span>Поворотно-откидная</span>
                                     </label>
@@ -432,17 +434,6 @@
                         </div>
 
                         <div class="opening__body el3 el active" data-color_id="0" data-open="3">
-                            <div class="opening__variant">
-                                <div class="opening__one variant" data-stvorka="1">
-                                    Вариант октрытия 1 створки
-                                </div>
-                                <div class="opening__two variant" data-stvorka="2">
-                                    Вариант октрытия 2 створки
-                                </div>
-                                <div class="opening__three variant" data-stvorka="3">
-                                    Вариант окрытия 3 створки
-                                </div>
-                            </div>
                             <div class="card-calculate__window window">
                                 <div class="window__item w3">
                                     <div class="window__wrapper">
@@ -450,34 +441,44 @@
                                         </div>
                                         <div class="window__stvorki">
                                             <div class="window__stvorka">
-                                                <div class="s1" data-type></div>
+                                                <div class="s1" data-type=""></div>
                                             </div>
                                             <div class="window__stvorka">
-                                                <div class="s2" data-type></div>
+                                                <div class="s2" data-type=""></div>
                                             </div>
                                             <div class="window__stvorka">
-                                                <div class="s3" data-type></div>
+                                                <div class="s3" data-type=""></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="opening__variant">
+                                    <div class="opening__one variant" data-stvorka="1">
+                                        1
+                                    </div>
+                                    <div class="opening__two variant" data-stvorka="2">
+                                        2
+                                    </div>
+                                    <div class="opening__three variant" data-stvorka="3">
+                                        3
+                                    </div>
+                                </div>
                             </div>
-                            <div class="opening__type">
-                                <p class="opening__stvorka">Левая створка</p>
+                            <div class="opening__type" id="opening__type-3">
+                                <p class="opening__stvorka">Вариант открытия</p>
                                 <div class="opening__line">
 
                                     <div class="opening__input">
-
-                                        <input type="radio" id="gluh2" value="Глухая" class="input_radio" name="option">
+                                        <input type="radio" id="gluh2" value="Глухая" class="input_radio" name="option"
+                                            data-stvorka_type="gluh">
                                         <label for="gluh2" class="input_label">Глухая</label>
-
                                     </div>
 
                                 </div>
                                 <div class="opening__line">
 
                                     <input type="radio" id="povorotnaya2" value="Поворотная" name="option"
-                                        class="opening__input--option">
+                                        class="opening__input--option" data-stvorka_type="povorotnaya">
 
                                     <label for="povorotnaya2" class="opening__label">
                                         <span>Поворотная</span>
@@ -500,10 +501,11 @@
                                 </div>
                                 <div class="opening__line">
 
-                                    <input type="radio" id="povorotno-otkidnaya" value="Поворотно-откидная"
-                                        name="option" class="opening__input--option">
+                                    <input type="radio" id="povorotno-otkidnaya2" value="Поворотно-откидная"
+                                        name="option" class="opening__input--option"
+                                        data-stvorka_type="povorotno-otkidnaya">
 
-                                    <label for="povorotno-otkidnaya" class="opening__label">
+                                    <label for="povorotno-otkidnaya2" class="opening__label">
                                         <span>Поворотно-откидная</span>
                                     </label>
 
@@ -581,9 +583,7 @@
                                 Окна добавленые к расчету
                             </h4>
                         </div>
-                        <div class="card-calculate__window calculation">
-
-                        </div>
+                        <div class="result"></div>
                     </div>
 
                     <div class="calculate__card card-calculate">
@@ -644,7 +644,7 @@
                         </div>
                     </div>
 
-                    <button type="button" class="_btn calculate__btn">Расчитать</button>
+                    <button type="button" class="_btn calculate__btn" id="calculate">Расчитать</button>
 
                     <p class="calculate__text">
                         Перед тем, как планировать покупку новых пластиковых окон в компании «Фаворит», каждый

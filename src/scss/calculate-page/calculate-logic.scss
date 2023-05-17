@@ -321,17 +321,76 @@
 //   background-color: #b8e8ff;
 // }
 
-// [data-type="gluh"] {
-//   background-color: #b8e8ff;
-// }
+[data-type="gluh"] {
+  background-color: #b8e8ff;
+}
+
+[data-type="povorotno-otkidnaya"],
+[data-type="povorotnaya"] {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b8e8ff;
+    z-index: 1;
+  }
+}
 
 [data-type="povorotnaya"] {
-  background-image: url(../img/window/strokes.open.l.png);
+
+  &::after {
+    background-image: url(../img/window/strokes.open.l.png);
+  }
+}
+
+.s3[data-type="povorotnaya"] {
+  &::after {
+    margin-left: 7px;
+    background-image: url(../img/window/strokes.open.r.png);
+  }
+}
+
+.s2[data-type="povorotnaya"] {
+  &::after {
+    margin-left: 10px;
+    background-image: url(../img/window/strokes.open.r.png);
+  }
 }
 
 [data-type="povorotno-otkidnaya"] {
-  background-image: url(../img/window/strokes.open.fl.png);
+
+  &::after {
+    background-image: url(../img/window/strokes.open.fl.png);
+  }
 }
+
+.s3[data-type="povorotno-otkidnaya"] {
+  position: relative;
+
+  &::after {
+    margin-left: 7px;
+    background-image: url(../img/window/strokes.open.fr.png);
+  }
+}
+
+
 
 
 

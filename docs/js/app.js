@@ -4084,10 +4084,12 @@
     }));
     let windowActive = document.querySelectorAll(".stvorki[data-window]");
     window.addEventListener("DOMContentLoaded", (function(e) {
-        document.querySelectorAll(".stvorki[data-window]")[2].click();
+        document.querySelectorAll(".stvorki[data-window]")[0].click();
     }));
     windowActive.forEach((sash => {
         sash.addEventListener("click", (function(e) {
+            let nodes = e.target.parentNode.innerHTML;
+            console.log(nodes);
             removeClass("active", windowActive);
             this.classList.add("active");
             let quantitySash = this.dataset.window;
@@ -4107,19 +4109,39 @@
     }));
     let variantSash = document.querySelectorAll(".variant");
     addEvent(variantSash, "click", switchStvorki);
+    document.querySelectorAll('[data-stvorka="1"]').forEach((item => item.click()));
     function switchStvorki() {
         let dataAttr = this.dataset.stvorka;
         let parent = this.closest(".el");
         let s1 = parent.querySelector(".s1");
         let s2 = parent.querySelector(".s2");
         let s3 = parent.querySelector(".s3");
-        if (s1) if (dataAttr == 1) s1.classList.add("active"); else s1.classList.remove("active");
-        if (s2) if (dataAttr == 2) s2.classList.add("active"); else s2.classList.remove("active");
-        if (s3) if (dataAttr == 3) s3.classList.add("active"); else s3.classList.remove("active");
+        if (s1) if (dataAttr == 1) s1.classList.add("active-stvorka"); else s1.classList.remove("active-stvorka");
+        if (s2) if (dataAttr == 2) s2.classList.add("active-stvorka"); else s2.classList.remove("active-stvorka");
+        if (s3) if (dataAttr == 3) s3.classList.add("active-stvorka"); else s3.classList.remove("active-stvorka");
         removeClass("active-type", variantSash);
         this.classList.add("active-type");
     }
-    document.querySelectorAll(".opening__line");
+    let opening__type1 = document.querySelector("#opening__type-3");
+    let opening__type2 = document.querySelector("#opening__type-2");
+    let opening__type3 = document.querySelector("#opening__type-1");
+    opening__type1.addEventListener("change", loadDataEl);
+    opening__type2.addEventListener("change", loadDataEl);
+    opening__type3.addEventListener("change", loadDataEl);
+    function loadDataEl(e) {
+        let datra = e.target.dataset.stvorka_type;
+        let parent = "";
+        let childData = "";
+        if (datra) {
+            parent = e.target.closest(".el");
+            childData = parent.querySelector(".active-stvorka").dataset;
+            childData.type = e.target.dataset.stvorka_type;
+        }
+    }
+    let calculateBtn = document.querySelector("#calculate");
+    calculateBtn.addEventListener("click", (function(e) {
+        document.querySelectorAll("input[checked]");
+    }));
     function addEvent(elementNode, event, funcName) {
         elementNode.forEach((elem => {
             elem.addEventListener(event, funcName);
