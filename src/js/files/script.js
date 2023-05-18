@@ -105,26 +105,6 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 });
 
 
-// Скрипты высоты и ширины
-
-let range = document.querySelectorAll('.range-size__input');
-
-if (range) {
-  range.forEach(item => {
-    item.addEventListener('input', getValue);
-  })
-
-  function getValue(e) {
-    let parent = e.target.closest('.range-size');
-    let value = e.target.value;
-    let input = parent.querySelector('.range-value');
-
-    input.value = value;
-  }
-}
-
-
-
 
 /*
 
@@ -135,151 +115,17 @@ if (range) {
 // let elementStyle = getComputedStyle(element, "::before")
 // console.log(elementStyle.color);
 
+
+
+
 function changeColor(value) {
-  let dataColorEl = document.querySelectorAll('[data-color_id]');
-
-  dataColorEl.forEach(color => {
-    color.dataset.color_id = value;
-  })
+  let color_id = value;
+  console.log(color_id);
 }
 
-let radioChangeColor = document.querySelectorAll('.colors');
-radioChangeColor.forEach(el => {
-  el.addEventListener('change', function (e) {
-    if (this.checked) {
-      let dataRadioColor = this.dataset.value;
-      changeColor(dataRadioColor)
-
-      if (dataRadioColor == 1) {
-        document.querySelector('#colors').classList.add('active-dropdown');
-      } else {
-        document.querySelector('#colors').classList.remove('active-dropdown');
-      }
-    }
-  })
-})
-
-let windowActive = document.querySelectorAll('.stvorki[data-window]');
-
-
-window.addEventListener('DOMContentLoaded', function (e) {
-  document.querySelectorAll('.stvorki[data-window]')[0].click();
-})
-
-
-windowActive.forEach(sash => {
-  sash.addEventListener('click', function (e) {
-
-    let nodes = e.target.parentNode.innerHTML;
-    console.log(nodes);
-
-    removeClass('active', windowActive);
-
-    this.classList.add('active');
-
-    let quantitySash = this.dataset.window;
-
-    let dataIdEl = document.querySelectorAll('[data-id]');
-    dataIdEl.forEach(el => {
-      el.dataset.id = quantitySash;
-    });
-
-    // let openTypeSash = document.querySelector('[data-open]');
-    // openTypeSash.dataset.open = quantitySash;
-
-    let dataOpen = document.querySelectorAll('[data-open]');
-    dataOpen.forEach(item => {
-      if (item.dataset.open == quantitySash) {
-        item.classList.add('active')
-      } else {
-        item.classList.remove('active')
-      }
-    })
-  })
-})
-
-let inputTypeSahs = document.querySelectorAll('.opening__input--option');
-inputTypeSahs.forEach(item => {
-  item.addEventListener('click', function (e) {
-
-  })
-})
-
-
-
-let variantSash = document.querySelectorAll('.variant');
-
-addEvent(variantSash, 'click', switchStvorki);
-
-document.querySelectorAll('[data-stvorka="1"]').forEach(item => item.click());
-
-function switchStvorki() {
-
-  let dataAttr = this.dataset.stvorka;
-  let parent = this.closest('.el');
-
-  let s1 = parent.querySelector('.s1');
-  let s2 = parent.querySelector('.s2');
-  let s3 = parent.querySelector('.s3');
-
-
-  if (s1) {
-    if (dataAttr == 1) {
-      s1.classList.add('active-stvorka');
-    } else {
-      s1.classList.remove('active-stvorka');
-    }
-  }
-
-  if (s2) {
-    if (dataAttr == 2) {
-      s2.classList.add('active-stvorka');
-    } else {
-      s2.classList.remove('active-stvorka');
-    }
-  }
-
-  if (s3) {
-    if (dataAttr == 3) {
-      s3.classList.add('active-stvorka');
-    } else {
-      s3.classList.remove('active-stvorka');
-    }
-  }
-
-  removeClass('active-type', variantSash);
-  this.classList.add('active-type')
+function refreshImage(e) {
+  console.log(a);
 }
-
-let opening__type1 = document.querySelector('#opening__type-3');
-let opening__type2 = document.querySelector('#opening__type-2');
-let opening__type3 = document.querySelector('#opening__type-1');
-
-opening__type1.addEventListener('change', loadDataEl)
-opening__type2.addEventListener('change', loadDataEl)
-opening__type3.addEventListener('change', loadDataEl)
-
-function loadDataEl(e) {
-  let datra = e.target.dataset.stvorka_type;
-  let parent = '';
-  let childData = '';
-
-  if (datra) {
-    parent = e.target.closest('.el');
-    childData = parent.querySelector('.active-stvorka').dataset;
-    childData.type = e.target.dataset.stvorka_type;
-  }
-}
-
-
-
-let calculateBtn = document.querySelector('#calculate');
-calculateBtn.addEventListener('click', function (e) {
-  let mass = [];
-
-  let checkedEl = document.querySelectorAll('input[checked]');
-})
-
 
 
 
